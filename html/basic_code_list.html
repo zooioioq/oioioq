@@ -12,20 +12,70 @@
       body {
         background-color : #8eafce;
       }
-      h1, div {
+      .h1{
+        padding : 10px;
+        width : 100px;
+        height : auto;
+        margin-bottom : 50px;
+      }
+      div {
         background-color : #eee;
+        padding : 25px;
+        margin-bottom : 50px;
+      }
+      p {
+        color : #777;
+        background-color : #ddd;
       }
     </style>
-  
   </head>
 
   <body>
-    <h1> <a href="../index.html"> oi.oi.oq </a> </h1>
+    <h1 class="h1"> <a href="../index.html"> <img src="oioioq.png" width=100%> </a> </h1>
+
     <div>
       <h2> Web 기초 파악 </h2>
       <hr />
       <h3> HTML 기본 요소 및 CSS 선택자 </h3> <br />
-      <h4> 2. 목록 </h4>
+    </div>
+
+    <div>
+      <h4> 목록 </h4>
+      HTML에는 목록을 만드는데 사용하는 태그들이 존재한다. <br />
+      <strong> 순서가 있는 목록 / 순서가 없는 목록 / 데이터 관리를 위한 목록 </strong> 의 3가지 종류로 구분할 수 있다. <br />
+      아래는 목록을 나타내는 태그가 표현된 모습이다.
+      <hr />
+
+      <h5> 순서가 있는 목록 </h5>
+      <ol>
+        <li> 내용 </li>
+        <li> 내용 </li>
+        <li> 내용 </li>
+        <li> 내용 </li>
+      </ol>
+      <br />
+      <h5> 순서가 없는 목록 </h5>
+      <ul>
+        <li> 내용 </li>
+        <li> 내용 </li>
+        <li> 내용 </li>
+        <li> 내용 </li>
+      </ul>
+      <br />
+      <h5> 데이터 관리를 위한 목록 </h5>
+      <dl>
+        <dt> 데이터의 제목 </dt>
+        <dd> 관리할 하위 내용 </dd>
+        <dd> 관리할 하위 내용 </dd>
+        <dd> 관리할 하위 내용 </dd>
+        <dd> 관리할 하위 내용 </dd>
+        <dt> 데이터의 제목 </dt>
+        <dd> 관리할 하위 내용 </dd>
+        <dd> 관리할 하위 내용 </dd>
+        <dd> 관리할 하위 내용 </dd>
+        <dd> 관리할 하위 내용 </dd>
+      </dl>
+      
     </div>
 
   </body>
