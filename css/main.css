@@ -1,0 +1,23 @@
+/*main.css*/
+
+body {
+  background-color : #8eafce;
+}
+
+.h1{
+  padding : 10px;
+  width : 100px;
+  height : auto;
+  margin-bottom : 50px;
+}
+
+div {
+  background-color : #eee;
+  padding : 25px;
+  margin-bottom : 50px;
+}
+
+p {
+  color : #777;
+  background-color : #ddd;
+}
