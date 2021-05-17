@@ -8,56 +8,86 @@
     <link rel="shortcut icon" href="./oioioq.png" type="image/png">
     <link rel="apple-touch-icon" href="./oioioq.png">
 
-    <link rel="stylesheet" href="../css/main.css">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> --> 
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
   </head>
 
   <body>
     <h1 class="h1"> <a href="../index.html"> <img src="oioioq.png" width=100%> </a> </h1>
 
-    <div>
-      <h2> Web 기초 파악 </h2>
-      <hr />
-      <h3> HTML 기본 요소 및 CSS 선택자 </h3> <br />
-    </div>
+    <div id="header">
 
-    <div>
-      <h4> 목록 </h4>
-      HTML에는 목록을 만드는데 사용하는 태그들이 존재한다. <br />
-      <strong> 순서가 있는 목록 / 순서가 없는 목록 / 데이터 관리를 위한 목록 </strong> 의 3가지 종류로 구분할 수 있다. <br />
-      아래는 목록을 나타내는 태그가 표현된 모습이다.
+      <div id="navigation" class="clearfix">
+      <h2 id="title"> Web 기초 파악 </h2>
       <hr />
 
-      <h5> 순서가 있는 목록 </h5>
-      <ol>
-        <li> 내용 </li>
-        <li> 내용 </li>
-        <li> 내용 </li>
-        <li> 내용 </li>
-      </ol>
-      <br />
-      <h5> 순서가 없는 목록 </h5>
-      <ul>
-        <li> 내용 </li>
-        <li> 내용 </li>
-        <li> 내용 </li>
-        <li> 내용 </li>
+      <h3 class="menu"> HTML </h3>
+      <ul class="menu">
+        <li><a href="./basic_code_title.html" title="제목과 내용 강조"> 제목 요소 및 내용 강조 표현 </a></li>
+        <li><a href="./basic_code_list.html" title="목록"> 목록 </a></li>
+        <li><a href="./basic_code_table.html" title="테이블 코딩"> 테이블 코딩 </a></li>
       </ul>
-      <br />
-      <h5> 데이터 관리를 위한 목록 </h5>
-      <dl>
-        <dt> 데이터의 제목 </dt>
-        <dd> 관리할 하위 내용 </dd>
-        <dd> 관리할 하위 내용 </dd>
-        <dd> 관리할 하위 내용 </dd>
-        <dd> 관리할 하위 내용 </dd>
-        <dt> 데이터의 제목 </dt>
-        <dd> 관리할 하위 내용 </dd>
-        <dd> 관리할 하위 내용 </dd>
-        <dd> 관리할 하위 내용 </dd>
-        <dd> 관리할 하위 내용 </dd>
-      </dl>
       
+      <hr />
+
+      <h3 class="menu"> CSS </h3>
+      <ul class="menu">
+       <li><a href="./basic_code_selector.html" title="id, class 선택자"> id 선택자와 class 선택자 </a></li>
+       <li><a href="./basic_code_psuedo.html" title="의사 전달 코드"> 의사 전달 코드 </a></li>  
+      </ul>
+
+      </div>
+
+      <div id="content" class="clearfix"> 
+
+        <h3> HTML 기본 요소 및 CSS 선택자 </h3> <br />
+    
+        <div>
+          <h4> 목록 </h4>
+          HTML에는 목록을 만드는데 사용하는 태그들이 존재한다. <br />
+          <strong> 순서가 있는 목록 / 순서가 없는 목록 / 데이터 관리를 위한 목록 </strong> 의 3가지 종류로 구분할 수 있다. <br />
+          아래는 목록을 나타내는 태그가 표현된 모습이다.
+          <hr />
+    
+          <h5> 순서가 있는 목록 </h5>
+          <ol>
+            <li> 내용 </li>
+            <li> 내용 </li>
+            <li> 내용 </li>
+            <li> 내용 </li>
+          </ol>
+          <br />
+          <h5> 순서가 없는 목록 </h5>
+          <ul>
+            <li> 내용 </li>
+            <li> 내용 </li>
+            <li> 내용 </li>
+            <li> 내용 </li>
+          </ul>
+          <br />
+          <h5> 데이터 관리를 위한 목록 </h5>
+          <dl>
+            <dt> 데이터의 제목 </dt>
+            <dd> 관리할 하위 내용 </dd>
+            <dd> 관리할 하위 내용 </dd>
+            <dd> 관리할 하위 내용 </dd>
+            <dd> 관리할 하위 내용 </dd>
+            <dt> 데이터의 제목 </dt>
+            <dd> 관리할 하위 내용 </dd>
+            <dd> 관리할 하위 내용 </dd>
+            <dd> 관리할 하위 내용 </dd>
+            <dd> 관리할 하위 내용 </dd>
+          </dl>
+          
+        </div>
+
+      </div>
+
     </div>
+
+
+    
 
   </body>
 </html>

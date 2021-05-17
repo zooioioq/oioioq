@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* common.css */
+
+
+
+
+
+.clearfix {
+  height : auto;
+}
+
+
+
+.clearfix:after,
+.clearfix::after {
+  content:" ";
+  display : block;
+  clear : both;
+}
+
+
+
+a {
+  color : #333;
+}
+
+
+
+a:visited {
+  color : #aaa;
+}
+
+
+
+body {
+  background-color : #8eafce;
+}
+
+
+
+.h1{
+  padding : 10px;
+  width : 100px;
+  height : auto;
+  margin : auto;
+  margin-bottom : 50px;
+}
+
+
+#header {
+  width : 1000px;
+  height : auto;
+  margin : auto;
+}
+
+#navigation {
+  float : left;
+  width : 15%;
+  height : auto;
+  background-color : #eee;
+  padding : 20px;
+  margin-right : 20px;
+}
+
+
+#content {
+  float : left;
+  width : 75%;
+  height : auto;
+  background-color : #eee;
+  padding : 20px;
+  margin-bottom : 100px;
+}

@@ -8,16 +8,44 @@
     <link rel="shortcut icon" href="./oioioq.png" type="image/png">
     <link rel="apple-touch-icon" href="./oioioq.png">
 
-    <link rel="stylesheet" href="../css/main.css">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> --> 
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
   </head>
 
   <body>
-    <h1> <a href="../index.html"> oi.oi.oq </a> </h1>
-    <div>
-      <h2> Web 기초 파악 </h2>
+    <h1 class="h1"> <a href="../index.html"> <img src="oioioq.png" width=100%> </a> </h1>
+
+    <div id="header">
+
+      <div id="navigation" class="clearfix">
+      <h2 id="title"> Web 기초 파악 </h2>
       <hr />
-      <h3> HTML 기본 요소 및 CSS 선택자 </h3> <br />
-      <h4> 테이블 코딩 </h4>
+
+      <h3 class="menu"> HTML </h3>
+      <ul class="menu">
+        <li><a href="./basic_code_title.html" title="제목과 내용 강조"> 제목 요소 및 내용 강조 표현 </a></li>
+        <li><a href="./basic_code_list.html" title="목록"> 목록 </a></li>
+        <li><a href="./basic_code_table.html" title="테이블 코딩"> 테이블 코딩 </a></li>
+      </ul>
+      
+      <hr />
+
+      <h3 class="menu"> CSS </h3>
+      <ul class="menu">
+      <li><a href="./basic_code_selector.html" title="id, class 선택자"> id 선택자와 class 선택자 </a></li>
+      <li><a href="./basic_code_psuedo.html" title="의사 전달 코드"> 의사 전달 코드 </a></li>
+      </ul>
+
+      </div>
+
+      <div id="content" class="clearfix"> 
+
+        <h3> HTML 기본 요소 및 CSS 선택자 </h3> <br />
+        <h4> 테이블 코딩 </h4>
+
+      </div>
+
     </div>
 
   </body>
