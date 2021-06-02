@@ -5,7 +5,11 @@
 :root {
   --color-w : #fff;
   --color-k : #333;
-  --color-000 : #8eafce;
+  --color-001 : #91A8BF;
+  --color-002 : #6284A0;
+  --color-003 : #7084A5;
+  --color-004 : #4b6981;
+  --color-005 : #1D2B4B;
 
 }
 
@@ -26,7 +30,8 @@
   width : 300px;
   height : auto;
   min-height : 1080px;
-  background-image: linear-gradient(var(--color-w) 10%, var(--color-000) 50%);
+  background-color : var(--color-004);
+  /* background-image: linear-gradient(var(--color-001) 10%, var(--color-003) 50%); */
   box-shadow: 5px 0 #aaa;
   text-align: center;
 }
@@ -48,13 +53,14 @@
 #headBox dt {
   font-size : 2rem;
   font-weight : 700;
-  color : var(--color-k);
+  color : var(--color-w);
 }
 
 #headBox dd {
   font-size : 200;
   padding-top : 10px;
   text-transform: capitalize;
+  color : var(--color-w);
 }
 
 
@@ -90,9 +96,10 @@
   font-size : 1.15rem;
   font-weight: 600;
   text-transform: capitalize;
+  color : var(--color-w);
 }
 
 
 #navBox a:hover {
-  background-color : var(--color-w);
+  background-color : var(--color-001);
 }
