@@ -33,6 +33,11 @@ a:visited {
 }
 
 
+h2 {
+  font-size : 1.3rem;
+}
+
+
 #header {
   float : left;
   width : 15%;
