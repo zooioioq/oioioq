@@ -18,8 +18,9 @@
 #wrap {
   width : 1920px;
   height : auto;
-  min-height : 1080px;
+  min-height : 5000px;
   margin : auto;
+  background-image : linear-gradient(var(--color-w) 25%, var(--color-001) 50%, var(--color-003) 70%, var(--color-005)90%);
 }
 
 
