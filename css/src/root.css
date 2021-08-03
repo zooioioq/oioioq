@@ -1,0 +1,14 @@
+/* css/src/root.css */
+
+
+:root {
+  --color-white : #ffffff;
+  --color-bg : #f2f2f2;
+  --color-bright-gray : #eeeeee;
+  --color-deep-gray : #575757;
+  --color-scroll-blue : #8eafce;
+  --color-main-blue : #30588c;
+  --color-black : #000000;
+  
+  --box-shadow : 3px 3px 3px rgba(79,79,79,0.25);
+}
