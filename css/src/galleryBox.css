@@ -2,11 +2,14 @@
 
 
 .gallery_img_area {
+  position: relative;
   width : 1500px;  height : 500px; 
   margin-left : 310px; 
 }
 
 .gallery_img_area > ul {
+  position: absolute;
+  left : -750px;
   width : auto; height: 100%;
   overflow : hidden;
 }
