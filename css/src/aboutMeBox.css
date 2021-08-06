@@ -130,9 +130,6 @@
   transform: scale(1.05, 1.05);
 }
 
-.skills_design {
-  display: none;
-}
 
 .skills_design, .skills_coding {
   width : 100%; height: auto;
