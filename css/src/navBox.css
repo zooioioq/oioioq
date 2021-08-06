@@ -30,6 +30,7 @@
 #navBox li > a:hover,
 #navBox li > a:focus {
   border-bottom : 5px solid #30588c;
+    border-bottom: var(--border-bottom);
   transform: scale(1.05, 1.05);
 }
 

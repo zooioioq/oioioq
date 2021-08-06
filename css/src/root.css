@@ -10,5 +10,6 @@
   --color-main-blue : #30588c;
   --color-black : #000000;
   
-  --shadow : 3px 3px 3px rgba(79,79,79,0.25);
+  --shadow : 0.1875rem 0.1875rem 0.1875rem rgba(79,79,79,0.25);
+  --border-bottom : 0.3125rem solid #30588c;
 }
