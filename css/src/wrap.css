@@ -9,7 +9,9 @@
 #headBox {
   position : fixed;
   top : 0; left : 0;
-  width : 100%; height : 90px;
+  z-index: 100;
+  width : 100%; height : 80px;
+  background-color : #fff;
 }
 
 
@@ -21,6 +23,7 @@
 
 
 #viewBox {
+  position: relative;
   width : 100%; 
   height: 100vh;  max-height: 1080px;
   background-color : #eee;
@@ -30,6 +33,8 @@
 #aboutMeBox {
   width : 100%; 
   height: 100vh;  max-height: 1080px;
+  padding : 0 310px;
+  box-sizing: border-box;
   background-color : #fff;
     background-color : var(--color-white);
 }
@@ -65,3 +70,13 @@
     background-color : var(--color-deep-gray);
 }
 
+
+h2 {
+  width : 100%; height : 130px;
+  padding : 100px 0;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  font-size : 27px;
+    font-size : 1.6875rem;
+}

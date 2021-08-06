@@ -6,14 +6,16 @@
   width : 100%; height: 100%;
   display: flex;
   justify-content: space-around;
-  padding : 1rem; box-sizing: border-box;
+  padding-top : 0.8rem; box-sizing: border-box;
 }
 
 #navBox li {
   width : 20%; height : 100%;
-  font-size : 24px;
   line-height: 2;
   text-align: center;
+  text-transform: uppercase;
+  font-size : 24px;
+    font-size : 1.5rem;
   color : #575757;
     color: var(--color-deep-gray);
 }
@@ -21,4 +23,16 @@
 #navBox li > a {
   display: block;
   width : 100%; height: 100%;
+  box-sizing: border-box;
+  transition: all 300ms linear;
+}
+
+#navBox li > a:hover,
+#navBox li > a:focus {
+  border-bottom : 5px solid #30588c;
+  transform: scale(1.05, 1.05);
+}
+
+#navBox li > a:focus {
+  outline: 0;
 }

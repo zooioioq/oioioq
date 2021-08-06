@@ -1,0 +1,7 @@
+/* css/src/projectBox.css */
+
+
+#projectBox > h2 {
+  color : #fff;
+    color : var(--color-white);
+}

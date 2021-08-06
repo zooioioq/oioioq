@@ -1,0 +1,14 @@
+/* css/src/headBox.css */
+
+
+
+#headBox > h1 {
+  position: absolute;
+  top : 0;  left : 12%;
+  width : 10%; height: calc(100% - 1rem );
+  margin : 0.5rem;
+  background-image: url("../../img/oioioq.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position : 50% 50%;
+}
