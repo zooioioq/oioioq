@@ -1,6 +1,10 @@
 /* css/src/aboutMeBox.css */
 
 
+#aboutMeBox > h2 {
+  margin-bottom : 20px;
+    margin-bottom : 3.125rem;
+}
 .basic_info_area {
   float: left;
   width : 50%; height : 650px;

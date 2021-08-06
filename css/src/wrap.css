@@ -25,14 +25,14 @@
 #viewBox {
   position: relative;
   width : 100%; 
-  height: 100vh;  max-height: 1080px;
+  height: 1080px;
   background-color : #eee;
 }
 
 
 #aboutMeBox {
   width : 100%; 
-  height: 100vh;  max-height: 1080px;
+  height: 1080px;
   padding : 0 310px;
   box-sizing: border-box;
   background-color : #fff;
@@ -42,7 +42,7 @@
 
 #projectBox {
   width : 100%; 
-  height: 100vh;  max-height: 1080px;
+  height: 1080px;
   background-color : #30588c;
     background-color: var(--color-main-blue);
 }
@@ -50,7 +50,7 @@
 
 #studyBox {
   width : 100%; 
-  height: 200vh;  max-height: 2160px;
+  height: 2160px;
   background-color : #fff;
     background-color : var(--color-white);
 }
@@ -58,7 +58,7 @@
 
 #galleryBox {
   width : 100%; 
-  height: 100vh;  max-height: 1080px;
+  height: 1080px;
   background-color : #f2f2f2;
     background-color : var(--color-bg);
 }
