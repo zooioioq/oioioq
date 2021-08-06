@@ -3,7 +3,7 @@
 
 .basic_info_area {
   float: left;
-  width : 50%; height : 100%;
+  width : 50%; height : 650px;
 }
 
 .me_img {
@@ -64,11 +64,12 @@
 /* .detail_info_area */
 .detail_info_area {
   float: right;
-  width : 50%; height: 100%;
+  width : 50%; height: 650px;
 }
 
 .skills {
-  width : 100%; height : 350px;
+  width : 100%; height : 400px;
+  margin-bottom : 25px;
 }
 
 .skills > h3 {
@@ -109,21 +110,24 @@
 }
 
 .skills_design {
-  width : 100%; height: 100%;
-  background-color : #acf;
+  display: none;
 }
 
-.skills_design > li > ul {
-  width : 100%; height: 100%;
-  background-color: #fff;
+.skills_design, .skills_coding {
+  width : 100%; height: auto;
+  padding : 2rem;
+  box-sizing: border-box;
 }
 
-.skills_design li {
+.skills_design li,
+.skills_coding li {
   float: left;
-  width : 60%; height : auto;
+  width : 50%; height : auto;
+  margin-bottom : 20px;
 }
 
 .skills dt {
+  margin-bottom : 5px;
   font-size: 18px;
   font-size : 1.125rem;
   color : #575757;
@@ -133,6 +137,7 @@
 .skills dd.narr {
   font-weight: 300;
   color : #575757;
+  margin-bottom : 5px;
   color : var(--color-deep-gray);
 }
 
@@ -143,9 +148,46 @@
   background-position: 50% 50%;
 }
 
-
 .skills dd.skills_50 { background-image: url("../../img/aboutme/skills/skills_50.svg");}
 .skills dd.skills_60 { background-image: url("../../img/aboutme/skills/skills_60.svg");}
 .skills dd.skills_70 { background-image: url("../../img/aboutme/skills/skills_70.svg");}
 .skills dd.skills_80 { background-image: url("../../img/aboutme/skills/skills_80.svg");}
 .skills dd.skills_90 { background-image: url("../../img/aboutme/skills/skills_90.svg");}
+
+.personality {
+  background-color: #ddd;
+}
+
+.personality > h3 {
+  margin-bottom : 30px;
+  font-weight: 700;
+  font-size: 40px;
+  color : #30588c;
+    color : var(--color-main-blue);
+}
+
+.mbti_img {
+  float: left;
+  width : 270px; height: 180px;
+  margin-left : 50px;
+  background-image: url("../../img/mbti.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position : 50% 50%;
+}
+
+.personality_word {
+  float: right;
+  width : 120px;  height: 100%;
+}
+
+.personality_word dd {
+  float: right;
+  width : 60px;
+}
+
+.personality_word dd.em {
+  float: left;
+  width: 60px;
+}
+

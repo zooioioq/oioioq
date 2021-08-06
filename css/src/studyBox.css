@@ -1,0 +1,8 @@
+/* css/src/studyBox.css */
+
+
+#studyBox > p {
+  margin-top : 300px;
+  font-size : 50px;
+  text-align: center;
+}
