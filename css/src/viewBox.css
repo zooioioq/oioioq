@@ -6,8 +6,8 @@
 }
 
 .video_area > video {
-  width : auto; height: auto;
-  min-width : 100%; max-height: 100%;
+  width : 120%; height: 120%;
+  margin-left : -10%;
 }
 
 #viewBox > p {

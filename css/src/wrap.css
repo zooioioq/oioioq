@@ -3,6 +3,7 @@
 
 #wrap {
   width : 100%; height : auto;
+  overflow: hidden;
 }
 
 
@@ -10,7 +11,7 @@
   position : fixed;
   top : 0; left : 0;
   z-index: 100;
-  width : 100%; height : 80px;
+  width : 100%; height : 70px;
   background-color : #fff;
 }
 
@@ -26,7 +27,7 @@
   position: relative;
   width : 100%; 
   height: 1080px;
-  background-color : #eee;
+  overflow: hidden;
 }
 
 
