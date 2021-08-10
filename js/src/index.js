@@ -81,22 +81,13 @@
 
   win.on('scroll',function(){
     var meImgOffset = meImg.offset().Top;
-    var winScrollTop = win.scrollTop();
+    var meWinScrollTop = win.scrollTop();
     var meMoveImg = meImgOffset - winH;
 
-    if(meMoveImg = winScrollTop){
+    if(meMoveImg = meWinScrollTop){
       meImg.addClass('act');
     }
   });
-
-
-
-
-
-  // aboutmeBox 내부 대표 img parallax
-  var projectImg = $('.yanolja_mokup');
-
-
 
 
 
