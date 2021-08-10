@@ -12,14 +12,22 @@
 }
 
 .me_img {
+  opacity: 0;
   width : 500px; height: 400px;
     width : 31.25rem; height: 25rem;
   background-image: url("../../img/aboutme/aboutme.jpg");
-  background-repeat: no;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position : 50% 50%;
+  margin-top : 1000px;
+  transition: all 2000ms ease;
+}
+
+.me_img.act {
+  opacity: 1;
+  margin-top : 0;
   margin-bottom : 30px;
-    margin-bottom : 1.875rem;
+  margin-bottom : 1.875rem;
 }
 
 .name_area {

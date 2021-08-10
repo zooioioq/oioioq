@@ -12,10 +12,9 @@
   var viewBox = $('#viewBox');
   var recommend = true;
   var countScroll = 0;
-  var winH;
+  var winH = win.outerHeight();
 
   var setWinHFn = function(){
-    winH = win.outerHeight();
     viewBox.css({height:winH + 'px'});
   };
   
@@ -53,7 +52,7 @@
 
 
   
-  // about me box 내부 skills tab menu 
+  // aboutmeBox 내부 skills tab menu 
   var aboutme = $('#aboutMeBox');
   var skills = aboutme.find('.skills');
   var skillsCateUl = skills.children('.skills_category');
@@ -72,6 +71,32 @@
     skillsDetailUl.eq(_this).siblings().hide();
     skillsDetailUl.eq(_this).show();
   });
+
+
+
+
+
+  // aboutmeBox 내부 대표 img landing
+  var meImg = $('.me_img');
+
+  win.on('scroll',function(){
+    var meImgOffset = meImg.offset().Top;
+    var winScrollTop = win.scrollTop();
+    var meMoveImg = meImgOffset - winH;
+
+    if(meMoveImg = winScrollTop){
+      meImg.addClass('act');
+    }
+  });
+
+
+
+
+
+  // aboutmeBox 내부 대표 img parallax
+  var projectImg = $('.yanolja_mokup');
+
+
 
 
 

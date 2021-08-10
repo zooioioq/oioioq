@@ -87,4 +87,11 @@
   background-position: 50% 50%;
   background-size : contain;
   background-repeat: no-repeat;
+  margin-top : 1000px;
+  transition: all 2000ms ease;
+}
+
+.yanolja_mokup.act {
+  opacity: 1;
+  margin-top : 0;
 }
