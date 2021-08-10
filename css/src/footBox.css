@@ -1,0 +1,13 @@
+/* css/src/footBox.css */
+
+
+
+#footBox > p {
+  padding-top : 32px;
+    padding-top : 2rem;
+  text-align: center;
+  color : #fff;
+    color : var(--color-white);
+  font-size : 14px;
+    font-size : 0.875rem;
+}

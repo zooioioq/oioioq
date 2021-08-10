@@ -68,7 +68,7 @@
 
 
 #footBox {
-  width : 100%; height: 220px;
+  width : 100%; height: 120px;
   background-color : #575757;
     background-color : var(--color-deep-gray);
 }
