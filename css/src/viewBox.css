@@ -22,3 +22,41 @@
   text-shadow: 3px 3px 3px rgba(79,79,79,0.25);
     text-shadow: var(--shadow);
 }
+
+@keyframes scroll {
+  0% {
+    bottom : 100px;
+  }
+  100%{
+    bottom : 50px;
+  }
+}
+#viewBox > .scroll {
+  position: absolute;
+  bottom : 50px; left : 0; right : 0;
+  width : 40px; height : 60px;
+  margin : auto;
+  animation: scroll 2s ease infinite;
+}
+
+#viewBox .cercel {
+  position: relative;
+  width : 100%; height: 100%;
+  border : 3px solid #fff;
+    border : 0.1875rem solid var(--color-white);
+  border-radius: 100%;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 3px #575757;
+    box-shadow: var(--shadow);
+}
+
+#viewBox .line {
+  position: absolute;
+  top : 10px; left : 0; right : 0;
+  width : 2px; height: 20%;
+  margin : auto;
+  background-color : #fff;
+    background-color : var(--color-white);
+  box-shadow: 3px 3px 3px #575757;
+    box-shadow: var(--shadow);
+}
