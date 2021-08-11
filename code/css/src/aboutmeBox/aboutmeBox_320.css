@@ -151,16 +151,16 @@
     float: left;
     width : 48%; height : 90px;
     margin-right : 2%;
-    margin-bottom : 20px;
-      margin-bottom : 1.25rem;
+    margin-bottom : 24px;
+      margin-bottom : 1.5rem;
   }
   
   
   .skills dt {
     margin-bottom : 5px;
       margin-bottom : 0.3125rem;
-    font-size: 16px;
-      font-size : 1rem;
+    font-size: 14px;
+      font-size : 0.875rem;
     color : #575757;
       color : var(--color-deep-gray);
   }
@@ -169,13 +169,15 @@
     font-weight: 300;
     margin-bottom : 5px;
       margin-bottom : 0.3125rem;
+    font-size: 14px;
+      font-size : 0.875rem;
     color : #575757;
       color : var(--color-deep-gray);
   }
   
   .skills dd.skills_img {
-    width : 160px;  height : 15px;
-      width : 10rem;  height : 0.9375rem;
+    width : 100px;  height : 15px;
+        width : 6.25rem; height : 0.9375rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
@@ -205,7 +207,7 @@
   .mbti_img {
     float: none;
     width : 100%; height: 150px;
-      height: 9.375rem;
+      height: 46.875vw; max-height: 200px;
     margin : auto;
     background-image: url("../../../img/mbti.png");
     background-repeat: no-repeat;

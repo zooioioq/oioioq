@@ -37,8 +37,8 @@
   #aboutMeBox {
     width : 100%; 
     min-height: 1700px;
-    height: 400vw;
-    max-height: 1800px;
+    height: 415vw;
+    max-height: 1900px;
     padding : 0 30px;
     box-sizing: border-box;
     background-color : #fff;
@@ -116,7 +116,7 @@
   .link_area > .go_to_renewal {
     position: relative;
     display: inline-block;
-    width : 270px;  height: 40px;
+    width : 100%;  height: 40px;
     padding : 8px;
       padding : 0.5rem;
     border : 1px solid #575757;
