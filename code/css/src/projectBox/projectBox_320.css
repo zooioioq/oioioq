@@ -11,8 +11,6 @@
   .project_info_area {
     width : 100%;  height : auto;
     margin-top : 0; margin-left : 0;
-    padding : 0 15px;
-    box-sizing: border-box;
   }
   
   .project_info_title {
