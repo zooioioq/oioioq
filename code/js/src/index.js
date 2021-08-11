@@ -2,7 +2,7 @@
 
 
 // nav viewBox 영역에서는 background-color 없도록
-// gallery 영역 320, 768에서는 이동하는 사이즈 변경
+// 320, 768에서는 viewBox img 변경
 
 
 (function($){
@@ -52,7 +52,23 @@
 
 
 
-  
+
+  // 320px ~ 1279px viewBox 영상 변경
+  var winWidth = $(window).outerWidth();
+  console.log(winWidth);
+  var video = $('video');
+  var mobileLink = './multi/mobile.mp4';
+  var pcLink = './multi/other.mp4';
+
+  if(winWidth < 1280){
+    console.log('mobile');
+    video.attr('src', mobileLink);
+  }else if(winWidth > 1280){
+    console.log('pc');
+    video.attr('src', pcLink);
+  }
+
+
   // aboutmeBox 내부 skills tab menu 
   var aboutme = $('#aboutMeBox');
   var skills = aboutme.find('.skills');
