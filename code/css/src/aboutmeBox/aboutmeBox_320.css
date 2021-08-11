@@ -176,8 +176,8 @@
   }
   
   .skills dd.skills_img {
-    width : 100px;  height : 15px;
-        width : 6.25rem; height : 0.9375rem;
+    width : 120px;  height : 15px;
+        width : 7.5rem; height : 0.9375rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
