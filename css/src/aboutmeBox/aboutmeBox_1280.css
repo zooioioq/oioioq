@@ -1,0 +1,245 @@
+/* css/src/aboutmeBox/aboutmeBox_1280.css */
+
+
+
+@media screen and (min-width : 1280px) and (max-width : 1599px) {
+  #aboutMeBox > h2 {
+    margin-bottom : 10px;
+      margin-bottom : 0.625rem;
+  }
+  .basic_info_area {
+    float: left;
+    width : 50%; height : 600px;
+      height : 37.5rem;
+  }
+  
+  .me_img {
+    opacity: 0;
+    width : 450px; height: 350px;
+      width : 28.125rem; height: 21.875rem;
+    background-image: url("../../../img/aboutme/aboutme.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position : 50% 50%;
+    margin-top : 1000px;
+    transition: all 1000ms ease;
+  }
+  
+  .me_img.act {
+    opacity: 1;
+    margin-top : 0;
+    margin-bottom : 30px;
+    margin-bottom : 1.875rem;
+  }
+  
+  .name_area {
+    width : 100%; height : auto;
+    margin-bottom : 50px;
+      margin-bottom : 3.125rem;
+  }
+  
+  .name_area > .name_kr {
+    float: left;
+    width : 120px;  height: auto;
+      width : 7.5rem;
+    margin-bottom : 15px;
+      margin-bottom : 0.9375rem;
+    font-weight: 700;
+    font-size: 40px;
+      font-size: 2.5rem;
+    color : #30588c;
+      color : var(--color-main-blue);
+  }
+  
+  .name_area > .name_en {
+    float: left;
+    padding-top : 10px;
+      padding-top : 0.625rem;
+    text-transform: uppercase;
+    color : #575757;
+      color : var(--color-deep-gray);
+  }
+  
+  .name_area > .info_text {
+    float: left;
+    width: 100%;
+    font-weight: 300;
+    color : #575757;
+      color : var(--color-deep-gray);
+  }
+  
+  .other_info {
+    font-weight: 300;
+    color : #575757;
+      color : var(--color-deep-gray);
+  }
+  
+  .other_info > dd:nth-of-type(1),
+  .other_info > dd:nth-of-type(3) {
+    margin-bottom : 15px;
+      margin-bottom : 0.9375rem;
+  }
+  
+  
+  
+  
+  
+  /* .detail_info_area */
+  .detail_info_area {
+    float: right;
+    width : 45%; height: 600px;
+      height : 37.5rem;
+  }
+  
+  .skills {
+    width : 100%; height : 370px;
+    margin-bottom : 25px;
+      height : 23.125rem; margin-bottom : 1.5625rem;
+  }
+  
+  .skills > h3 {
+    margin-bottom : 24px;
+      margin-bottom : 1.5rem;
+    font-size: 32px;
+      font-size : 2rem;
+    font-weight: 700;
+    color : #30588c;
+      color : var(--color-main-blue);
+  }
+  
+  .skills > .skills_category {
+    display: flex;
+    justify-content: space-around;
+    width : 80%; height : 40px;
+    margin : auto;
+    margin-bottom : 10px;
+    padding : 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+      height : 2.5rem;
+      margin-bottom : 0.625rem;
+      padding : 0.3125rem;
+  }
+  
+  .skills_category > li {
+    width : 45%;  height: 100%;
+    text-align: center;
+    font-size: 18px;
+      font-size : 1.125rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color : #575757;
+      color : var(--color-deep-gray);
+    transition: all 300ms linear;
+  }
+  
+  .skills_category > li.act,
+  .skills_category > li:hover,
+  .skills_category > li:focus {
+    border-bottom : 5px solid #30588c;
+      border-bottom : var(--border-bottom);
+    transform: scale(1.05, 1.05);
+  }
+  
+  
+  .skills_design, .skills_coding {
+    width : 100%; height: auto;
+    padding : 16px;
+      padding : 1rem;
+    box-sizing: border-box;
+  }
+  
+  .skills_design li,
+  .skills_coding li {
+    float: left;
+    width : 48%; height : auto;
+    margin-right : 2%;
+    margin-bottom : 20px;
+      margin-bottom : 1.25rem;
+  }
+  
+  
+  .skills dt {
+    margin-bottom : 5px;
+      margin-bottom : 0.3125rem;
+    font-size: 18px;
+      font-size : 1.125rem;
+    color : #575757;
+      color : var(--color-deep-gray);
+  }
+  
+  .skills dd.narr {
+    font-weight: 300;
+    margin-bottom : 5px;
+      margin-bottom : 0.3125rem;
+    color : #575757;
+      color : var(--color-deep-gray);
+  }
+  
+  .skills dd.skills_img {
+    width : 180px;  height : 15px;
+      width : 11.25rem;  height : 0.9375rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  
+  .skills dd.skills_50 { background-image: url("../../../img/aboutme/skills/skills_50.svg");}
+  .skills dd.skills_60 { background-image: url("../../../img/aboutme/skills/skills_60.svg");}
+  .skills dd.skills_70 { background-image: url("../../../img/aboutme/skills/skills_70.svg");}
+  .skills dd.skills_80 { background-image: url("../../../img/aboutme/skills/skills_80.svg");}
+  .skills dd.skills_90 { background-image: url("../../../img/aboutme/skills/skills_90.svg");}
+  
+  .personality {
+    width : 100%;
+    height : auto;
+  }
+  
+  .personality > h3 {
+    margin-bottom : 30px;
+      margin-bottom: 1.875rem;
+    font-weight: 700;
+    font-size: 32px;
+      font-size : 2rem;
+    color : #30588c;
+      color : var(--color-main-blue);
+  }
+  
+  .mbti_img {
+    float: left;
+    width : 200px; height: 140px;
+      width : 12.5rem; height: 8.75rem;
+    margin-left : 50px;
+      margin-left : 3.125rem;
+    background-image: url("../../../img/mbti.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position : 50% 50%;
+  }
+  
+  .personality_word {
+    float: right;
+    width : 130px;  height: 150px;
+      width : 8.125rem;  height: 9.375rem;
+    margin-right: 50px;
+      margin-left : 3.125rem;
+  }
+  
+  .personality_word dl {
+    width : 100%; height: 100%;
+  }
+  
+  .personality_word dd {
+    display: inline-block;
+    width : 60px; margin-bottom : 10px;
+      width : 3.75rem; margin-bottom : 0.625rem;
+  }
+  
+  .personality_word dd.em {
+    font-weight: 700;
+    color : #30588c;
+      color : var(--color-main-blue);
+  }
+  
+  
+}

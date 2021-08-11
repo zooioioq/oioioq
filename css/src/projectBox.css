@@ -1,90 +1,12 @@
 /* css/src/projectBox.css */
 
 
-#projectBox > h2 {
-  color : #fff;
-    color : var(--color-white);
-}
 
-.project_info_area {
-  float: left;
-  width : 500px;  height : auto;
-  margin-top : 100px;
-    margin-top : 6.25rem;
-  margin-left : 310px;
-    margin-bottom: 19.375rem;
-}
+@import url("./projectBox/projectBox_basic.css");
+@import url("./projectBox/projectBox_320.css");
+@import url("./projectBox/projectBox_768.css");
+@import url("./projectBox/projectBox_1280.css");
+@import url("./projectBox/projectBox_1600.css");
+@import url("./projectBox/projectBox_1920.css");
 
-.project_info_title {
-  margin-bottom : 50px;
-    margin-bottom : 3.125rem;
-}
 
-.project_info_area > .project_info_title > p {
-  margin-bottom : 16px;
-    margin-bottom : 1rem;
-  font-weight: 300;
-  font-size : 18px; 
-    font-size : 1.125rem;
-}
-
-.project_info_area > .project_info_title > h3 {
-  font-weight: 700;
-  font-size : 40px;
-    font-size : 2.5rem;
-}
-
-.project_info_area > p {
-  padding-bottom : 16px;
-    padding-bottom : 1rem;
-  border-bottom : 1px solid #fff;
-    border-bottom : 0.0625rem solid var(--color-white);
-  margin-bottom : 16px;
-    margin-bottom : 1rem;
-  line-height: 1.5;
-}
-
-.project_info_area > .device {
-  width : 100%; height: auto;
-  margin-bottom : 150px;
-    margin-bottom : 9.375rem;
-}
-
-.project_info_area > .device dt {
-  float: left;
-  margin-right: 8px;
-    margin-right : 0.5rem;
-  line-height: 1.5;
-}
-
-.project_info_area > .device dd {
-  line-height: 1.5;
-}
-
-.projecrt_link > .go_to_original {
-  border : 1px solid #fff;
-    border : 0.0625rem solid var(--color-white);
-}
-
-.projecrt_link > .go_to_renewal {
-  border : 1px solid #fff;
-    border : 0.0625rem solid var(--color-white);
-}
-
-.projecrt_link .link_arrow {
-  background-image: url("../../img/icon/east_w.svg");
-}
-
-.projecrt_link > .go_to_git {
-  background-image: url("../../img/icon/GitHub_w.png");
-}
-
-.yanolja_mokup {
-  display: block;
-  float: right;
-  width : 1000px; height : 690px;
-  background-image: url("../../img/mokup.png");
-  background-position: 50% 50%;
-  background-size : contain;
-  background-repeat: no-repeat;
-}

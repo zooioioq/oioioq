@@ -2,6 +2,7 @@
 
 
 
+/* basic */
 #footBox > p {
   padding-top : 32px;
     padding-top : 2rem;
@@ -10,4 +11,32 @@
     color : var(--color-white);
   font-size : 14px;
     font-size : 0.875rem;
+}
+
+
+
+@media screen and (min-width : 320px) and ( max-width : 767px) {
+  #footBox > p {
+    padding-top : 32px;
+      padding-top : 2rem;
+    text-align: center;
+    color : #fff;
+      color : var(--color-white);
+    font-size : 12px;
+      font-size : 0.75rem;
+  }
+}
+
+
+
+@media screen and (min-width : 768px) {
+  #footBox > p {
+    padding-top : 32px;
+      padding-top : 2rem;
+    text-align: center;
+    color : #fff;
+      color : var(--color-white);
+    font-size : 12px;
+      font-size : 0.75rem;
+  }
 }

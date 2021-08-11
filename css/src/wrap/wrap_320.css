@@ -1,0 +1,160 @@
+/* css/src/wrap/wrap_320.css */
+
+
+
+@media screen and (min-width : 320px) and (max-width : 767px){
+  #wrap {
+    width : 100%; height : auto;
+    overflow: hidden;
+  }
+  
+  
+  #headBox {
+    position : fixed;
+    top : 0; left: 0;
+    z-index: 100;
+    width : 100%; height : 30px;
+    background-color : #fff;
+  }
+  
+  
+  #navBox {
+    position : absolute;
+    top : 0; left: 0; right : 0;
+    width : 100%; height: 100%;
+    margin : auto;
+  }
+  
+  
+  #viewBox {
+    position: relative;
+    width : 100%; 
+    height: 640px;
+    overflow: hidden;
+  }
+  
+  
+  #aboutMeBox {
+    width : 100%; 
+    min-height: 1500px;
+    height: 400vw;
+    max-height: 1800px;
+    padding : 0 10px;
+    box-sizing: border-box;
+    background-color : #fff;
+      background-color : var(--color-white);
+  }
+  
+  
+  #projectBox {
+    position: relative;
+    width : 100%; 
+    min-height : 950px; height : 210vw;
+    max-height: 1200px;
+    color : #fff;
+      color : var(--color-white);
+    background-color : #30588c;
+      background-color: var(--color-main-blue);
+  }
+  
+  
+  #studyBox {
+    width : 100%; 
+    height: auto;
+    background-color : #fff;
+      background-color : var(--color-white);
+  }
+  
+  
+  #galleryBox {
+    width : 100%; 
+    height: 520px;
+    background-color : #f2f2f2;
+      background-color : var(--color-bg);
+  }
+  
+  
+  #footBox {
+    width : 100%; height: 120px;
+    background-color : #575757;
+      background-color : var(--color-deep-gray);
+  }
+  
+  
+  
+  
+  
+  /* common Box */
+  h2 {
+    width : 100%; height : 130px;
+    padding : 50px 0;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    font-size : 24px;
+      font-size : 1.5rem;
+  }
+  
+  .link_area {
+    width : 100%;  height: auto;
+  }
+  .link_area > .go_to_original {
+    position: relative;
+    width : 230px;  height: 30px;
+    margin-bottom : 20px;
+      margin-bottom : 1.25rem;
+    padding : 5px; padding-left : 8px;
+      padding : 0.1875rem;  padding-left : 0.5rem;
+    border : 1px solid #575757;
+      border : 0.0625rem solid var(--color-deep-gray);
+    box-sizing: border-box;
+    
+  }
+  
+  .link_area > .go_to_renewal {
+    position: relative;
+    display: inline-block;
+    width : 270px;  height: 40px;
+    padding : 8px;
+      padding : 0.5rem;
+    border : 1px solid #575757;
+      border : 0.0625rem solid var(--color-deep-gray);
+    box-sizing: border-box;
+    font-size : 18px;
+      font-size : 1.125rem;
+  }
+  
+  .link_area .link_arrow {
+    position: absolute;
+    top : 0;  right : 15%;
+    display: inline-block;
+    width : 24px; height : 100%;
+    background-image: url("../../img/icon/east_b.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    transition: all 300ms ease;
+  }
+  
+  .go_to_original:hover .link_arrow,
+  .go_to_renewal:hover .link_arrow {
+    right : 8px;
+  }
+  
+  .go_to_git {
+    display: block;
+    width : 70px; height : 30px;
+    margin-left: 0;  margin-bottom : 0;
+    margin-top : 10px;
+    background-image: url("../../img/icon/GitHub_b.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .go_to_git > a {
+    display: block;
+    width : 100%; height: 100%;
+  }
+  
+}

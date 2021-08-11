@@ -2,6 +2,7 @@
 
 
 // nav viewBox 영역에서는 background-color 없도록
+// gallery 영역 320, 768에서는 이동하는 사이즈 변경
 
 
 (function($){
@@ -98,6 +99,7 @@
   var galImgArea = gallery.find('.gallery_img_area');
   var galImgUl = galImgArea.children('ul');
   var galLiLen = galImgUl.children('li').length;
+  var galLiWid = galImgUl.children('li').outerWidth(true);
   var galBtn = gallery.find('.gallery_btn');
   var galPrevBtn = galBtn.find('.prev');
   var galNextBtn = galBtn.find('.next');
@@ -116,9 +118,9 @@
       i += 1;
       if(i > galLiLen-1){
         i = 0;
-        galImgUl.stop().css({marginLeft : 750 +'px'});
+        galImgUl.stop().css({marginLeft : galLiWid +'px'});
       }
-      galImgUl.stop().animate({marginLeft : -(750 * i) + 'px'},function(){
+      galImgUl.stop().animate({marginLeft : -(galLiWid * i) + 'px'},function(){
         permission = true;
       })
     }
@@ -129,10 +131,10 @@
     if(permission){
       permission = false;
       i -= 1;
-      galImgUl.stop().animate({marginLeft : -(750 * i) + 'px'},function(){
+      galImgUl.stop().animate({marginLeft : -(galLiWid * i) + 'px'},function(){
         if(i < 0){
           i = galLiLen -1;
-          galImgUl.stop().css({marginLeft : -(750 * i) + 'px'});
+          galImgUl.stop().css({marginLeft : -(galLiWid * i) + 'px'});
         }
         permission = true;
       })
