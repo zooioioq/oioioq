@@ -8,6 +8,52 @@
       color : var(--color-white);
   }
   
+  .project_button {
+    position: absolute;
+    z-index: 100;
+    bottom : 50px; left : 0; right : 0;
+    width : 200px; height :50px;
+    margin : auto;
+  }
+  
+  .project_button .next {
+    float: right;
+    width : 50px; height : 100%;
+    background-image: url("../../../img/icon/nextBtn.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  
+  .project_button .prev {
+    float: left;
+    width : 50px; height : 100%;
+    background-image: url("../../../img/icon/prevBtn.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  
+  .project_area {
+    width : 100%; height: calc(100% - 140px);
+    overflow: hidden;
+  }
+  
+  .project_list {
+    position: relative;
+    width : 300%; height : 100%;
+  }
+  
+  .project_list li {
+    float: left;
+    width : calc(100%/3); height: 100%;
+  }
+  
+  .project_inner_wrap {
+  width : 100%; height: 100%;
+  padding : 0;
+  }
+  
   .project_info_area {
     float: left;
     width : 500px;  height : auto;

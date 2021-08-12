@@ -1,12 +1,12 @@
 /* css/src/projectBox.css */
 
-
+/* 320 ~ 1280 수정해야함 */
 
 @import url("./projectBox/projectBox_basic.css");
 @import url("./projectBox/projectBox_320.css");
 @import url("./projectBox/projectBox_768.css");
 @import url("./projectBox/projectBox_1280.css");
-/* @import url("./projectBox/projectBox_1600.css"); */
-/* @import url("./projectBox/projectBox_1920.css"); */
+@import url("./projectBox/projectBox_1600.css");
+@import url("./projectBox/projectBox_1920.css");
 
 
