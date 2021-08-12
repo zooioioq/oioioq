@@ -69,6 +69,9 @@
   }
 
 
+
+
+
   // aboutmeBox 내부 skills tab menu 
   var aboutme = $('#aboutMeBox');
   var skills = aboutme.find('.skills');
@@ -103,6 +106,56 @@
 
     if(meMoveImg = meWinScrollTop){
       meImg.addClass('act');
+    }
+  });
+
+
+
+
+
+  // projectBox slide 처리
+  var projectBox = $('#projectBox');
+  var projectButton = $('.project_button');
+  var proNextBtn = projectButton.find('.next');
+  var proPrevBtn = projectButton.find('.prev');
+  var projectList = projectBox.find('.project_list');
+  var proListLi = projectList.children('li');
+  var proLiLen = proListLi.length;
+  var proLiWid = proListLi.outerWidth(true);
+  var p = 0;
+  var propermission = true;
+
+  var proLiClone = projectList.children('li').eq(-1).clone();
+  projectList.prepend(proLiClone);
+  projectList.css({'left' : -proLiWid + 'px'});
+
+  proNextBtn.on('click', function(e){
+    e.preventDefault();
+    if(propermission){
+      propermission = false;
+      p += 1;
+      if(p > proLiLen-1){
+        p = 0;
+        projectList.stop().css({marginLeft : proLiWid +'px'});
+      }
+      projectList.stop().animate({marginLeft : -(proLiWid * p) + 'px'},function(){
+        propermission = true;
+      })
+    }
+  });
+
+  proPrevBtn.on('click', function(e){
+    e.preventDefault();
+    if(propermission){
+      propermission = false;
+      p -= 1;
+      projectList.stop().animate({marginLeft : -(proLiWid * p) + 'px'},function(){
+        if(p < 0){
+          p = proLiLen -1;
+          projectList.stop().css({marginLeft : -(proLiWid * p) + 'px'});
+        }
+        propermission = true;
+      })
     }
   });
 
