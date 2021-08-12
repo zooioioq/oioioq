@@ -36,7 +36,7 @@
   
   #aboutMeBox {
     width : 100%; 
-    min-height: 1750px;
+    min-height: 1800px;
     height: 430vw;
     max-height: 1900px;
     padding : 0 30px;
@@ -49,7 +49,7 @@
   #projectBox {
     position: relative;
     width : 100%; 
-    min-height : 950px; height : 210vw;
+    min-height : 1050px; height : 210vw;
     max-height: 1200px;
     padding : 0 30px;
     box-sizing: border-box;
