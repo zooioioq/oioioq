@@ -207,7 +207,7 @@
   
   #viewBox > p {
     position : absolute;
-    right : 100px; bottom : 100px;
+    right : 100px; bottom : 150px;
     font-size : 32px;
       font-size : 2rem;
     line-height: 1.25;
@@ -271,7 +271,7 @@
   
   #viewBox > p {
     position : absolute;
-    right : 200px; bottom : 150px;
+    right : 200px; bottom : 180px;
     font-size : 32px;
       font-size : 2rem;
     line-height: 1.25;

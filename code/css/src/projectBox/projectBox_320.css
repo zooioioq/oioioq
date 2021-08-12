@@ -8,13 +8,59 @@
       color : var(--color-white);
   }
   
+  .project_button {
+    position: absolute;
+    z-index: 100;
+    bottom : 50px; left : 0; right : 0;
+    width : 150px; height :30px;
+    margin : auto;
+  }
+  
+  .project_button .next {
+    float: right;
+    width : 30px; height : 100%;
+    background-image: url("../../../img/icon/nextBtn.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  
+  .project_button .prev {
+    float: left;
+    width : 30px; height : 100%;
+    background-image: url("../../../img/icon/prevBtn.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  
+  .project_area {
+    width : 100%; height: calc(100% - 140px);
+    overflow: hidden;
+  }
+  
+  .project_list {
+    position: relative;
+    width : 300%; height : 100%;
+  }
+  
+  .project_list li {
+    float: left;
+    width : calc(100%/3); height: 100%;
+  }
+  
+  .project_inner_wrap {
+  width : 100%; height: 100%;
+  padding : 0;
+  }
+
   .project_info_area {
     width : 100%;  height : auto;
     margin-top : 0; margin-left : 0;
   }
   
   .project_info_title {
-    margin-bottom : 78.125vw;
+    margin-bottom : 70vw;
   }
   
   .project_info_area > .project_info_title > p {
@@ -82,9 +128,9 @@
   
   .yanolja_mokup {
     position: absolute;
-    top : 180px; left : 0; right : 0;
+    top : 80px; left : 0; right : 0;
     display: block;
-    width : 100%; height : 78.125vw;
+    width : 90%; height : 55vw;
     margin : auto;
     background-image: url("../../../img/mokup.png");
     background-position: 50% 50%;

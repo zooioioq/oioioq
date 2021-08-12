@@ -47,8 +47,8 @@
   #projectBox {
     position: relative;
     width : 100%; 
-    min-height : 1200px;  height: 140vw;
-    max-height: 1500px;
+    min-height : 1400px;  height: 145vw;
+    max-height: 1700px;
     color : #fff;
       color : var(--color-white);
     background-color : #30588c;
