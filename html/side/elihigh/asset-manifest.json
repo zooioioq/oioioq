@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/html/side/elihigh/static/css/main.6d366780.css",
+    "main.js": "/html/side/elihigh/static/js/main.1ff09d35.js",
+    "static/js/787.c7591072.chunk.js": "/html/side/elihigh/static/js/787.c7591072.chunk.js",
+    "index.html": "/html/side/elihigh/index.html",
+    "main.6d366780.css.map": "/html/side/elihigh/static/css/main.6d366780.css.map",
+    "main.1ff09d35.js.map": "/html/side/elihigh/static/js/main.1ff09d35.js.map",
+    "787.c7591072.chunk.js.map": "/html/side/elihigh/static/js/787.c7591072.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d366780.css",
+    "static/js/main.1ff09d35.js"
+  ]
+}

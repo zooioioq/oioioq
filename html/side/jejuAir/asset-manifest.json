@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/html/side/jejuAir/static/css/main.2d30abf4.css",
+    "main.js": "/html/side/jejuAir/static/js/main.5a527997.js",
+    "static/js/787.c2fff95e.chunk.js": "/html/side/jejuAir/static/js/787.c2fff95e.chunk.js",
+    "static/media/JejuairHero.webp": "/html/side/jejuAir/static/media/JejuairHero.0b270e83f32c58411a06.webp",
+    "static/media/budget.svg": "/html/side/jejuAir/static/media/budget.843615bab9c346e9a091.svg",
+    "static/media/date.svg": "/html/side/jejuAir/static/media/date.93ff72ed66b4550026ca.svg",
+    "index.html": "/html/side/jejuAir/index.html",
+    "static/media/departure.svg": "/html/side/jejuAir/static/media/departure.a3410c28f7f9d093fc2f.svg",
+    "static/media/arrival.svg": "/html/side/jejuAir/static/media/arrival.9c6c2fc72e867633fecf.svg",
+    "static/media/select.svg": "/html/side/jejuAir/static/media/select.5f097fff9a638b998564.svg",
+    "static/media/select_primary.svg": "/html/side/jejuAir/static/media/select_primary.8fcd8d2c81467111e8e1.svg",
+    "main.2d30abf4.css.map": "/html/side/jejuAir/static/css/main.2d30abf4.css.map",
+    "main.5a527997.js.map": "/html/side/jejuAir/static/js/main.5a527997.js.map",
+    "787.c2fff95e.chunk.js.map": "/html/side/jejuAir/static/js/787.c2fff95e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d30abf4.css",
+    "static/js/main.5a527997.js"
+  ]
+}
