@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!-- LimeMall_adm_002 -->
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:url" content="http://www.oioioq.com">
+        <meta property="og:title" content="oioioq :: PORTFOLIO">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="http://www.oioioq.com/resources/images/metaImg.webp">
+        <meta property="og:description" content="WEB DESIGN & PUBLISHING PORTFOLIO">
+
+        <link rel="icon" type="image/x-icon" href="../../../resources/images/favicon.svg" />
+        <link rel="stylesheet" type="text/css" href="../resources/css/package_adm.css" />
+
+        <title>oioioq :: Employee Mall</title>
+    </head>
+    <body>
+        <!-- wrap -->
+        <div class="wrap">
+            <!-- header -->
+            <header class="header">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="./LimeMall_adm_001.html">
+                        <img src="../resources/images/logo.svg" alt="복지몰 관리자페이지" />
+                        <span>employee mall management</span>
+                    </a>
+                </div>
+                <!-- // logo -->
+                <!-- link -->
+                <div class="link">
+                    <a href="./LimeMall_main_001.html">복지몰</a>
+                    <a href="./LimeMall_login.html">로그아웃</a>
+                </div>
+                <!-- // link -->
+            </header>
+            <!-- // header -->
+            <!-- nav -->
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <dt>
+                            <a href="./LimeMall_adm_001.html">
+                                <img src="../resources/images/adm_nav_dash.svg" alt="대시보드" />
+                                <p>대시보드</p>
+                            </a>
+                        </dt>
+                    </li>
+                    <li class="act">
+                        <dt>
+                            <img src="../resources/images/adm_nav_appli.svg" alt="신청 관리" />
+                            <p>신청 관리</p>
+                            <button type="button" class="nav_btn"></button>
+                        </dt>
+                        <dd class="act"><a href="./LimeMall_adm_002.html">입금</a></dd>
+                        <dd><a href="./LimeMall_adm_003.html">구매대행</a></dd>
+                    </li>
+                    <li>
+                        <dt>
+                            <img src="../resources/images/adm_nav_point.svg" alt="포인트 관리" />
+                            <p>포인트 관리</p>
+                            <button type="button" class="nav_btn"></button>
+                        </dt>
+                        <dd><a href="./LimeMall_adm_005.html">포인트 전환 신청</a></dd>
+                        <dd><a href="./LimeMall_adm_007.html">포인트 전환 / 사용 내역</a></dd>
+                        <dd><a href="./LimeMall_adm_009.html">포인트 수정</a></dd>
+                    </li>
+                    <li>
+                        <dt>
+                            <img src="../resources/images/adm_nav_prdct.svg" alt="상품 관리" />
+                            <p>상품 관리</p>
+                            <button type="button" class="nav_btn"></button>
+                        </dt>
+                        <dd><a href="./LimeMall_adm_011.html">IT 기기</a></dd>
+                        <dd><a href="./LimeMall_adm_011.html">생활용품</a></dd>
+                    </li>
+                    <li>
+                        <dt>
+                            <img src="../resources/images/adm_nav_set.svg" alt="설정" />
+                            <p>설정</p>
+                            <button type="button" class="nav_btn"></button>
+                        </dt>
+                        <dd><a href="./LimeMall_adm_013.html">공통 코드 관리</a></dd>
+                        <dd><a href="./LimeMall_adm_016.html">카테고리 관리</a></dd>
+                        <dd><a href="./LimeMall_adm_018.html">FAQ</a></dd>
+                    </li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+            <!-- content -->
+            <div class="content">
+                <!-- con_box -->
+                <div class="con_box">
+                    <!-- con_title -->
+                    <h2 class="con_title">신청 관리 ( 입금 )</h2>
+                    <!-- // con_title -->
+                    <!-- search_form -->
+                    <div class="search_form">
+                        <!-- form_area -->
+                        <div class="form_area">
+                            <!-- input_wrap -->
+                            <div class="input_wrap">
+                                <label>Select</label>
+                                <select class="select">
+                                    <option>전체</option>
+                                </select>
+                            </div>
+                            <!-- // input_wrap -->
+                            <!-- input_wrap -->
+                            <div class="input_wrap">
+                                <label>Input</label>
+                                <input type="text" class="input" placeholder="검색어">
+                            </div>
+                            <!-- // input_wrap -->
+                            <!-- input_wrap -->
+                            <div class="input_wrap date">
+                                <div class="input_wrap">
+                                    <label>Date</label>
+                                    <input type="date" class="input date">
+                                </div>
+                                <span>~</span>
+                                <div class="input_wrap">
+                                    <input type="date" class="input date">
+                                </div>
+                            </div>
+                            <!-- // input_wrap -->
+                        </div>
+                        <!-- // form_area -->
+                        <!-- btn_area -->
+                        <div class="btn_area">
+                            <button type="button" class="btn btn_l btn_lineY">초기화</button>
+                            <button type="button" class="btn btn_l btn_lightY">조회</button>
+                        </div>
+                        <!-- // btn_area -->
+                    </div>
+                    <!-- // search_form -->
+                    <!-- search_form_btn -->
+                    <button type="button" class="search_form_btn"></button>
+                    <!-- // search_form_btn -->
+                    <!-- table_wrap -->
+                    <div class="table_wrap">
+                        <!-- table -->
+                        <table class="table">
+                            <colgroup>
+                                <col style="width: calc(100% / 6);">
+                                <col style="width: calc(100% / 6);">
+                                <col style="width: calc(100% / 6);">
+                                <col style="width: calc(100% / 6);">
+                                <col style="width: calc(100% / 6);">
+                                <col style="width: calc(100% / 6);">
+                            </colgroup>
+                            <!-- thead -->
+                            <thead>
+                                <tr>
+                                    <th>NO</th>
+                                    <th>카테고리</th>
+                                    <th>신청자명</th>
+                                    <th>사용 포인트</th>
+                                    <th>신청 일자</th>
+                                    <th>신청 상태</th>
+                                </tr>
+                            </thead>
+                            <!-- // thead -->
+                            <!-- tbody -->
+                            <tbody>
+                                <tr>
+                                    <td>20231106002</td>
+                                    <td>고속 / 시외 버스</td>
+                                    <td>김OO</td>
+                                    <td>84,000p</td>
+                                    <td>2023-11-06</td>
+                                    <td>대기</td>
+                                </tr>
+                                <tr>
+                                    <td>20231106002</td>
+                                    <td>KTX ( 철도 )</td>
+                                    <td>이OO</td>
+                                    <td>84,000p</td>
+                                    <td>2023-11-06</td>
+                                    <td>대기</td>
+                                </tr>
+                                <tr>
+                                    <td>20231106002</td>
+                                    <td>국내선 항공권</td>
+                                    <td>박OO</td>
+                                    <td>84,000p</td>
+                                    <td>2023-11-06</td>
+                                    <td>대기</td>
+                                </tr>
+                                <tr>
+                                    <td>20231106002</td>
+                                    <td>인터넷 강의</td>
+                                    <td>최OO</td>
+                                    <td>84,000p</td>
+                                    <td>2023-11-06</td>
+                                    <td>승인</td>
+                                </tr>
+                                <tr>
+                                    <td>20231106002</td>
+                                    <td>지하철 정기권</td>
+                                    <td>정OO</td>
+                                    <td>84,000p</td>
+                                    <td>2023-11-06</td>
+                                    <td>승인</td>
+                                </tr>
+                                <tr>
+                                    <td>20231106002</td>
+                                    <td>고속 / 시외 버스</td>
+                                    <td>한OO</td>
+                                    <td>84,000p</td>
+                                    <td>2023-11-06</td>
+                                    <td>승인</td>
+                                </tr>
+                                <tr>
+                                    <td>20231106002</td>
+                                    <td>KTX ( 철도 )</td>
+                                    <td>강OO</td>
+                                    <td>84,000p</td>
+                                    <td>2023-11-06</td>
+                                    <td class="td_red">반려</td>
+                                </tr>
+                                <tr>
+                                    <td>20231106002</td>
+                                    <td>국내선 항공권</td>
+                                    <td>권OO</td>
+                                    <td>84,000p</td>
+                                    <td>2023-11-06</td>
+                                    <td class="td_red">반려</td>
+                                </tr>
+                                <tr>
+                                    <td>20231106002</td>
+                                    <td>인터넷 강의</td>
+                                    <td>유OO</td>
+                                    <td>84,000p</td>
+                                    <td>2023-11-06</td>
+                                    <td class="td_red">반려</td>
+                                </tr>
+                                <tr>
+                                    <td>20231106002</td>
+                                    <td>지하철 정기권</td>
+                                    <td>고OO</td>
+                                    <td>84,000p</td>
+                                    <td>2023-11-06</td>
+                                    <td class="td_red">반려</td>
+                                </tr>
+                            </tbody>
+                            <!-- // tbody -->
+                        </table>
+                        <!-- // table -->
+                    </div>
+                    <!-- // table_wrap -->
+                    <!-- paging -->
+                    <div class="paging">
+                        <!-- number -->
+                        <p class="number">총<span>14</span>건</p>
+                        <!-- // number -->
+                        <!-- paging_btn -->
+                        <div class="paging_btn">
+                            <ul>
+                                <li><button type="button" class="first" disabled></button></li>
+                                <li><button type="button" class="prev" disabled></button></li>
+                                <li><button type="button" class="act">1</button></li>
+                                <li><button type="button">2</button></li>
+                                <li><button type="button">3</button></li>
+                                <li><button type="button">4</button></li>
+                                <li><button type="button">5</button></li>
+                                <li><button type="button">6</button></li>
+                                <li><button type="button">7</button></li>
+                                <li><button type="button">8</button></li>
+                                <li><button type="button">9</button></li>
+                                <li><button type="button">10</button></li>
+                                <li><button type="button" class="next"></button></li>
+                                <li><button type="button" class="last"></button></li>
+                            </ul>
+                        </div>
+                        <!-- // paging_btn -->
+                    </div>
+                    <!-- // paging -->
+                </div>
+                <!-- // con_box -->
+            </div>
+            <!-- // content -->
+        </div>
+        <!-- // wrap -->
+
+        <!-- script -->
+        <script src="../resources/js/jquery.min.js"></script>
+        <script src="../resources/js/publish_adm.js"></script>
+        <!-- // script -->
+    </body>
+</html>
