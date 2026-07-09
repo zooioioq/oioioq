@@ -1,0 +1,22 @@
+// font
+@font-face {
+  font-family: 'Pretendard Variable'; 
+  font-weight: 45 920; 
+  font-style: normal; 
+  font-display: swap; 
+  src: local('Pretendard Variable'), url('../font/PretendardVariable.woff2') format('woff2-variations'); 
+}
+
+@font-face {
+  font-family: 'EB Garamond Variable'; 
+  font-weight: 45 920; 
+  font-style: normal; 
+  font-display: swap; 
+  src: local('EBGaramond Variable'), url('../font/EBGaramondVariable.woff2') format('woff2-variations'); 
+}
+
+* {
+  font-family: 'Pretendard Variable', sans-serif; 
+  color: #333; 
+  font-weight: 400; 
+}

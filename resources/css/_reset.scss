@@ -1,0 +1,138 @@
+// reset
+* {
+  box-sizing: border-box;  
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding : 0;
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-text-size-adjust : 100%;
+  -moz-text-size-adjust : 100%;
+  -ms-text-size-adjust : 100%;
+  -o-text-size-adjust : 100%;
+  font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, address, ul, ol, li, dl, dt, dd, img, br, hr, div {
+  margin : 0;
+  padding : 0;
+  border : 0;
+  outline : 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size : 1rem;
+  font-weight: 400; 
+}
+
+ul, li, ol {
+  list-style : none; 
+}
+
+a {
+  color : inherit;
+  text-decoration: none;
+  outline: none; 
+}
+
+header, nav, section, article, footer, aside, main, figure, figcaption {
+  display : block; 
+}
+
+abbr {
+ text-decoration: none; 
+}
+
+address {
+ font-style: normal; 
+}
+
+fieldset {
+ padding : 0;  
+ margin : 0;  
+ border : 0; 
+}
+
+button, input, select {
+  padding : 0; 
+  border : 0; 
+  outline: none; 
+  background : none; 
+  cursor: pointer; 
+  font: inherit; 
+  line-height: inherit; 
+}
+
+::-webkit-input-placeholder, 
+::-moz-placeholder, 
+:-ms-input-placeholder, 
+:-moz-placeholder {
+  color: #aaa; 
+}
+
+select {
+  -webkit-appearance:none; 
+  -moz-appearance:none; 
+  appearance:none; 
+}
+
+img {
+  display: block; 
+}
+
+:disabled {
+  color: var(--color-txt-light) !important; 
+  opacity: unset !important; 
+}
+
+/* 숫자 input에 아이콘 숨김 */
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* 모바일 스크롤 숨김 */
+* {
+  scrollbar-width: none; -ms-overflow-style: none; 
+}
+
+.scroll_table::-webkit-scrollbar,
+.con_content::-webkit-scrollbar {
+  display: none; 
+}
+
+/* 안드로이드 이미지 클릭시 파란색 방지 */
+input:focus {
+  outline: none; 
+}
+
+* {
+  -webkit-tap-highlight-color: transparent; 
+}
+
+/* ios 기본스타일 제거 */
+input, textarea, button {
+  appearance: none; 
+  -moz-appearance: none; 
+  -webkit-appearance: none; 
+  border-radius: 0; 
+  -webkit-border-radius : 0; 
+  -moz-border-radius : 0; 
+}
+
+textarea:focus {
+  outline: 0; 
+}
+
+/* selection */
+::selection {
+  color: var(--main-blue); 
+  background-color: transparent;
+}

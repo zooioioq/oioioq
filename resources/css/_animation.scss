@@ -1,0 +1,34 @@
+// animation
+@keyframes topText {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(-75%);
+  }
+}
+
+@keyframes topTextRe {
+  from {
+    transform: translateX(-75%);
+  } to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes link {
+  from {
+    height: 1rem; 
+  } to {
+    height: 100%; 
+  }
+}
+
+@keyframes shack {
+  0% {
+    transform: translateY(0);
+  } 50% {
+    transform: translateY(1rem);
+  } 100% {
+    transform: translateY(0);
+  }
+}

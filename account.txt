@@ -1,0 +1,8 @@
+[ Host ]
+oioioq.com
+
+[ User ]
+oioioq
+
+[ Password ]
+icc25802580!
