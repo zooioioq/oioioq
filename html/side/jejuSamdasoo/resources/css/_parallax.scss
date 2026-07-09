@@ -1,0 +1,201 @@
+// parallax__cont
+#parallax__cont {
+  width: 100%;
+
+  .parallax__item {
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+
+    .fixWrapper {
+      z-index: $z-parallax-2;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+
+      .mainSamdasoo {
+        display: block;
+        width: 240px;
+        max-width: 40vw;
+        height: auto;
+      
+        img {
+          display: block;
+          width: 100%;
+          height: fit-content;
+        }
+      }
+    }
+
+    .sub__text {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(-50%);
+
+      p {
+        font-size: 30px;
+        font-weight: 1000;
+        letter-spacing: 2px;
+        font-family: $ff-DM;
+        color: $fc-primary;
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: 300;
+        color: $fc-gray;
+      }
+
+      &.white {
+        p,
+        span {
+          color: $fc-white;
+        }
+      }
+    }
+
+    .main__text {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      display: flex;
+      width: calc(100% - 20px);
+      margin-top: -10%;
+      flex-direction: column;
+      gap: 15px;
+      
+      img {
+        position: relative;
+        display: block;
+        width: fit-content;
+        height: auto;
+        max-height: 25vh;
+        margin: auto;
+
+        &:nth-child(1) {
+          z-index: $z-parallax-1;
+        }
+        &:nth-child(2) {
+          z-index: $z-parallax-3;
+        }
+      }
+    }
+
+    .moreBtn {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      width: 168px;
+      height: 48px;
+      border-radius: 48px;
+      border: 4px solid #fff;
+      box-sizing: border-box;
+      background-color: transparent;
+      transform: translateX(-50%);
+
+      p {
+        font-size: 17px;
+        font-weight: 600;
+        font-family: $ff-DM;
+        text-transform: uppercase;
+        color: $fc-white;
+      }
+    }
+
+    .visual__text {
+      position: absolute;
+      top: 360px;
+      left: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      transform: translateX(-50%);
+
+      &__main {
+        font-size: 36px;
+        color: $fc-black;
+        line-height: 1.4;
+        font-family: $ff-ESC;
+        font-weight: 200;
+        text-align: center;
+
+        .primary {
+          font-weight: 500;
+          color: $fc-primary;
+        }
+      }
+
+      &__sub {
+        font-size: 18px;
+        color: $fc-black;
+        line-height: 1.25;
+        text-align: center;
+      }
+    }
+
+    .moreInformation {
+      position: absolute;
+      left: 100px;
+      bottom: 10%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      color: $fc-white;
+
+      h3 {
+        font-size: 33px;
+        font-family: $ff-DM;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 1.5;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        li {
+          a {
+            font-size: 20px;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+  }
+
+  #section {
+    &1 {
+      background-color: $c-lightGray;
+    }
+
+    &2 {
+      background-color: $c-primary;
+    }
+
+    &3 {
+      background-color: $c-green;
+    }
+
+    &4 {
+      min-height: 1280px;
+      background-image: url("../images/main_background.webp");
+      background-position: center bottom;
+    }
+  }
+}

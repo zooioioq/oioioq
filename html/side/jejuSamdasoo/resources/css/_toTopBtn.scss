@@ -1,0 +1,44 @@
+// toTopBtn
+.toTopBtn {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  animation: bounce 0.75s linear 0s infinite alternate;
+  cursor: pointer;
+
+  a {
+    display: flex;
+    text-transform: uppercase;
+    font-family: $ff-ESC;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: $fc-white;
+    align-items: center;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 48px;
+      height: 12px;
+      background-image: url("../images/ico_toTop.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: unset;
+    }
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: rotate(-90deg) translateX(0);
+  }
+  to {
+    transform: rotate(-90deg) translateX(50%);
+  }
+}

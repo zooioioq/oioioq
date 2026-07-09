@@ -134,8 +134,10 @@
         let _thisClass = $(this).attr('class');
         if(_thisClass == "jeju"){
             $('.side_content').text('제주항공 :: React, CSS');
-        }else if(_thisClass == "gsap"){
-            $('.side_content').text('GSAP :: Html, GSAP');
+        }else if(_thisClass == "work24"){
+            $('.side_content').text('고용24 :: HTML, SCSS, jQuery, Swiper');
+        }else if(_thisClass == "jejuSamdasoo"){
+            $('.side_content').text('제주 삼다수 :: GSAP, SCSS');
         }else if(_thisClass == "eli"){
             $('.side_content').text('엘리하이 :: React, CSS');
         }else if(_thisClass == "cardNews"){

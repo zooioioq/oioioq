@@ -1,0 +1,48 @@
+// wrap
+.wrap {
+  width: 100%;
+  min-width: 1400px;
+
+  .container {
+    width: 1248px;
+    height: auto;
+    margin: auto;
+  }
+}
+
+// flex__inner
+.flex__inner {
+  display: flex;
+  justify-content: space-between;
+
+  &.gap60 {
+    gap: 60px;
+
+    &.flex-2 {
+      > .flex__inner__items {
+        width: calc(50% - 30px);
+      }
+    }
+  }
+
+  &.gap24 {
+    gap: 24px;
+
+    &.flex-2 {
+      > .flex__inner__items {
+        width: calc(50% - 12px);
+      }
+    }
+  }
+}
+
+// blind
+.blind {
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}

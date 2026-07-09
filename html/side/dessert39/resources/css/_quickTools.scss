@@ -1,0 +1,52 @@
+// quickTools
+.quickTools {
+  position: fixed;
+  z-index: $z-quickTools;
+  right: 84px;
+  bottom: 20px;
+
+  &__list {
+    display: flex;
+    width: fit-content;
+    height: auto;
+    flex-direction: column;
+    gap: 24px;
+
+    &__items {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    span {      
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    &.login {
+      color: $fc-white-1;
+      background-color: $c-primary;
+    }
+
+    &.guide {
+      color: $fc-black-2;
+      background-color: $c-blue-1;
+    }
+
+    &.toTop {
+      background-image: url("../images/ico_toTop.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+}
