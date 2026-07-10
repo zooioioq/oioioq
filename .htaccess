@@ -1,16 +1,16 @@
 RewriteEngine On
 RewriteBase /
 
-# 1. 메인 index.html 숨기기 (기존 설정)
+# 1. 메인 index.html 숨기기
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ http://oioioq.com/ [R=301,L]
 DirectoryIndex index.html
 
-# 2. 사용자가 주소창에 직접 .html을 입력하면 제거하고 리다이렉트
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+)\.html\ HTTP/
-RewriteRule ^([^/]+)\.html$ /$1 [R=301,L]
+# 2. 하위 폴더를 포함하여 주소창에 직접 .html을 입력하면 제거하고 리다이렉트
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.html\ HTTP/
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
 
-# 3. 내부적으로 확장자 없이 들어온 요청을 .html 파일로 연결
+# 3. 하위 폴더를 포함하여 확장자 없이 들어온 요청을 실제 .html 파일로 연결
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^([^/]+)$ /$1.html [L]
+RewriteRule ^(.+)$ /$1.html [L]
