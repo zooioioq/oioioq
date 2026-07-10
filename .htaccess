@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# 1. 외부에서 index.html을 포함한 주소로 요청이 들어오면, 주소창에서 index.html을 강제로 제거하고 리다이렉트
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ http://oioioq.com/ [R=301,L]
+
+# 2. 내부적으로는 도메인만 치고 들어왔을 때 index.html을 보여주도록 처리 (주소창은 유지)
+DirectoryIndex index.html
