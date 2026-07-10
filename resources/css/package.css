@@ -455,14 +455,14 @@ textarea:focus {
   max-width: 128rem;
   height: auto;
   padding: 12rem 4rem;
-  padding-top: 24rem;
+  padding-top: 28rem;
   box-sizing: border-box;
   margin: auto;
   gap: 8rem;
 }
 #introduction div:first-child {
-  min-width: 30rem;
-  height: 43rem;
+  min-width: 24rem;
+  height: 32rem;
 }
 #introduction div:first-child img {
   width: 100%;
@@ -473,7 +473,7 @@ textarea:focus {
 #introduction div.txt_box {
   display: flex;
   width: calc(100% - 11rem);
-  height: 43rem;
+  height: 32rem;
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -1210,7 +1210,7 @@ textarea:focus {
 }
 @media (pointer: coarse) and (max-width: 767px) {
   .section {
-    height: 92.5vh;
+    height: 100dvh;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1240,6 +1240,7 @@ textarea:focus {
     width: 100%;
     max-width: 30rem;
     min-width: unset;
+    height: 40rem;
     margin: auto;
   }
   #introduction div.txt_box {
