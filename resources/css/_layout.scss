@@ -58,6 +58,20 @@
   }
 }
 
+// 화면에서는 보이지 않지만, 스크린리더는 읽을 수 있는 요소 (웹접근성용)
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+// 화면에서도 보이지 않고, 스크린리더도 읽지 않음 (개발용)
+.hide {
+  display: none !important;
+}
 
 // header
 .header {
