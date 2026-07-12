@@ -711,124 +711,6 @@ textarea:focus {
   transition: all 500ms ease;
   animation: topText 60s linear infinite;
 }
-.prjctdtl .project_layout {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 4rem;
-  padding-bottom: 0;
-  box-sizing: border-box;
-}
-.prjctdtl .project_layout .project_layout_inner {
-  display: flex;
-  padding-bottom: 4rem;
-  border-bottom: 0.1rem solid #ededef;
-  box-sizing: border-box;
-  gap: 4rem;
-  align-items: center;
-  cursor: none;
-}
-.prjctdtl .project_layout .project_layout_inner:not(a)::before, .prjctdtl .project_layout .project_layout_inner:not(a)::after {
-  display: none;
-}
-.prjctdtl .project_layout .project_layout_inner::before {
-  content: "VIEW";
-  position: absolute;
-  top: 50%;
-  right: 4rem;
-  font-size: 1.8rem;
-  font-weight: 200;
-  color: #767676;
-  transform: translateY(-50%);
-  transition: all 200ms ease;
-}
-.prjctdtl .project_layout .project_layout_inner::after {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 1rem;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-.prjctdtl .project_layout .project_layout_inner:hover::after {
-  opacity: 0.1;
-  animation: link 1.7s linear infinite;
-}
-.prjctdtl .project_layout .project_layout_inner img {
-  width: 32rem;
-  height: 32rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.prjctdtl .project_layout .project_layout_inner .text_box {
-  display: flex;
-  gap: 6rem;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-.prjctdtl .project_layout .project_layout_inner .text_box p {
-  font-family: "EB Garamond Variable";
-  font-size: 3.6rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-.prjctdtl .project_layout .project_layout_inner .text_box dl {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.prjctdtl .project_layout .project_layout_inner .text_box dl dt {
-  width: 12rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-.prjctdtl .project_layout .project_layout_inner .text_box dl dd {
-  width: calc(100% - 14rem);
-  font-size: 1.8rem;
-  font-weight: 200;
-}
-.prjctdtl .project_detail {
-  display: flex;
-  width: 100%;
-  height: auto;
-  padding: 8rem 4rem;
-  padding-bottom: 0;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  gap: 4rem;
-}
-.prjctdtl .project_detail.noGap {
-  gap: 0 !important;
-}
-.prjctdtl .project_detail img {
-  width: 100%;
-  border: 0.1rem solid #ededef;
-  box-sizing: border-box;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.prjctdtl .project_detail img.onlyPC {
-  display: block;
-}
-.prjctdtl .project_detail img.onlyMobile {
-  display: none;
-}
-.prjctdtl .project_detail .flex_text {
-  display: flex;
-  padding: 0 1rem;
-  box-sizing: border-box;
-  gap: 8rem;
-}
-.prjctdtl .project_detail .flex_text p {
-  width: calc(50% - 4rem);
-  line-height: 150%;
-  font-size: 1.8rem;
-  font-weight: 300;
-}
 .prjctdtl .project_link {
   display: none;
   position: fixed;
@@ -998,7 +880,7 @@ textarea:focus {
   border-bottom: 0.1rem solid #ededef;
   transition: all 300ms ease;
 }
-#design .design_list li a {
+#design .design_list li .design_btn {
   display: flex;
   width: 100%;
   height: auto;
@@ -1008,7 +890,7 @@ textarea:focus {
   align-items: center;
   cursor: none;
 }
-#design .design_list li a i {
+#design .design_list li .design_btn i {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
@@ -1018,14 +900,14 @@ textarea:focus {
   font-style: normal;
   transition: all 300ms ease;
 }
-#design .design_list li a p {
+#design .design_list li .design_btn p {
   font-family: "EB Garamond Variable";
   font-size: 3.2rem;
   font-weight: 800;
   color: #333;
   text-transform: capitalize;
 }
-#design .design_list li a span {
+#design .design_list li .design_btn span {
   font-size: 1.8rem;
   font-weight: 300;
   color: #767676;
@@ -1272,7 +1154,7 @@ textarea:focus {
   #skill .txt_box div p {
     margin-top: 2rem;
   }
-  #design .design_list li a span {
+  #design .design_list li .design_btn span {
     display: none;
   }
 }
@@ -1303,36 +1185,6 @@ textarea:focus {
   .prjctdtl .content::after {
     bottom: 14rem;
     font-size: 20vw;
-  }
-  .prjctdtl .project_layout {
-    padding: 3rem 3rem 0 3rem;
-  }
-  .prjctdtl .project_layout .project_layout_inner::after, .prjctdtl .project_layout .project_layout_inner::before {
-    display: none;
-  }
-  .prjctdtl .project_layout .project_layout_inner img {
-    width: 20rem;
-    height: 20rem;
-  }
-  .prjctdtl .project_layout .project_layout_inner .text_box {
-    gap: 3rem;
-  }
-  .prjctdtl .project_layout .project_layout_inner .text_box p {
-    font-size: 2.8rem;
-  }
-  .prjctdtl .project_layout .project_layout_inner .text_box dl {
-    gap: 1.5rem;
-  }
-  .prjctdtl .project_detail {
-    padding: 6rem 3rem;
-    padding-bottom: 0;
-  }
-  .prjctdtl .project_detail .flex_text {
-    gap: 5rem;
-  }
-  .prjctdtl .project_detail .flex_text p {
-    width: calc(50% - 2.5rem);
-    font-size: 1.6rem;
   }
   .prjctdtl .project_link {
     display: block;
@@ -1367,13 +1219,13 @@ textarea:focus {
   #design .design_list {
     padding-top: 12rem;
   }
-  #design .design_list li a i {
+  #design .design_list li .design_btn i {
     font-size: 2.2rem;
   }
-  #design .design_list li a p {
+  #design .design_list li .design_btn p {
     font-size: 2.8rem;
   }
-  #design .design_list li a span {
+  #design .design_list li .design_btn span {
     font-size: 1.6rem;
   }
   #design .design_list li:hover i {
@@ -1432,66 +1284,6 @@ textarea:focus {
     bottom: 10rem;
     font-size: 10rem;
   }
-  .prjctdtl .project_layout {
-    padding: 4rem 2rem 0 2rem;
-  }
-  .prjctdtl .project_layout .project_layout_inner {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .prjctdtl .project_layout .project_layout_inner::after, .prjctdtl .project_layout .project_layout_inner::before {
-    display: none;
-  }
-  .prjctdtl .project_layout .project_layout_inner img {
-    width: 70vw;
-    max-width: 32rem;
-    height: 70vw;
-    max-height: 32rem;
-  }
-  .prjctdtl .project_layout .project_layout_inner:not(:has(img)) {
-    align-items: flex-start;
-  }
-  .prjctdtl .project_layout .project_layout_inner .text_box {
-    gap: 3rem;
-  }
-  .prjctdtl .project_layout .project_layout_inner .text_box p {
-    font-size: 2.8rem;
-  }
-  .prjctdtl .project_layout .project_layout_inner .text_box dl {
-    gap: unset;
-    flex-direction: column;
-  }
-  .prjctdtl .project_layout .project_layout_inner .text_box dl dt {
-    width: 100%;
-    margin-bottom: 0.5rem;
-    font-size: 1.6rem;
-  }
-  .prjctdtl .project_layout .project_layout_inner .text_box dl dd {
-    width: 100%;
-    margin-bottom: 2rem;
-    font-size: 1.6rem;
-  }
-  .prjctdtl .project_layout .project_layout_inner .text_box dl dd:last-of-type {
-    margin-bottom: 0;
-  }
-  .prjctdtl .project_detail {
-    padding: 4rem 2rem;
-    padding-bottom: 0;
-  }
-  .prjctdtl .project_detail img.onlyPC {
-    display: none;
-  }
-  .prjctdtl .project_detail img.onlyMobile {
-    display: block;
-  }
-  .prjctdtl .project_detail .flex_text {
-    flex-direction: column;
-    gap: 4rem;
-  }
-  .prjctdtl .project_detail .flex_text p {
-    width: 100%;
-    font-size: 1.6rem;
-  }
   .prjctdtl .project_link {
     display: block;
     height: 6rem;
@@ -1525,13 +1317,13 @@ textarea:focus {
   #design .design_list {
     padding-top: 8rem;
   }
-  #design .design_list li a i {
+  #design .design_list li .design_btn i {
     font-size: 1.8rem;
   }
-  #design .design_list li a p {
+  #design .design_list li .design_btn p {
     font-size: 2.4rem;
   }
-  #design .design_list li a span {
+  #design .design_list li .design_btn span {
     font-size: 1.4rem;
   }
   #design .design_list li:hover i {
@@ -1555,4 +1347,283 @@ textarea:focus {
   #contact form .sendBtn {
     right: 4rem;
   }
+}
+.project_layout {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 4rem;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+.project_layout .project_layout_inner {
+  display: flex;
+  padding-bottom: 4rem;
+  border-bottom: 0.1rem solid #ededef;
+  box-sizing: border-box;
+  gap: 4rem;
+  align-items: center;
+  cursor: none;
+}
+.project_layout .project_layout_inner:not(a)::before, .project_layout .project_layout_inner:not(a)::after {
+  display: none;
+}
+.project_layout .project_layout_inner::before {
+  content: "VIEW";
+  position: absolute;
+  top: 50%;
+  right: 4rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: #767676;
+  transform: translateY(-50%);
+  transition: all 200ms ease;
+}
+.project_layout .project_layout_inner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 1rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.project_layout .project_layout_inner:hover::after {
+  opacity: 0.1;
+  animation: link 1.7s linear infinite;
+}
+.project_layout .project_layout_inner img {
+  width: 32rem;
+  height: 32rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.project_layout .project_layout_inner .text_box {
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.project_layout .project_layout_inner .text_box p {
+  font-family: "EB Garamond Variable";
+  font-size: 3.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.project_layout .project_layout_inner .text_box dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.project_layout .project_layout_inner .text_box dl dt {
+  width: 12rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.project_layout .project_layout_inner .text_box dl dd {
+  width: calc(100% - 14rem);
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.project_detail {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 8rem 4rem;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.project_detail.noGap {
+  gap: 0 !important;
+}
+.project_detail img {
+  width: 100%;
+  border: 0.1rem solid #ededef;
+  box-sizing: border-box;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.project_detail img.onlyPC {
+  display: block;
+}
+.project_detail img.onlyMobile {
+  display: none;
+}
+.project_detail .flex_text {
+  display: flex;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  gap: 8rem;
+}
+.project_detail .flex_text p {
+  width: calc(50% - 4rem);
+  line-height: 150%;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 640.1px) and (max-width: 1024px) {
+  .project_layout {
+    padding: 3rem 3rem 0 3rem;
+  }
+  .project_layout .project_layout_inner::after, .project_layout .project_layout_inner::before {
+    display: none;
+  }
+  .project_layout .project_layout_inner img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .project_layout .project_layout_inner .text_box {
+    gap: 3rem;
+  }
+  .project_layout .project_layout_inner .text_box p {
+    font-size: 2.8rem;
+  }
+  .project_layout .project_layout_inner .text_box dl {
+    gap: 1.5rem;
+  }
+  .project_detail {
+    padding: 6rem 3rem;
+    padding-bottom: 0;
+  }
+  .project_detail .flex_text {
+    gap: 5rem;
+  }
+  .project_detail .flex_text p {
+    width: calc(50% - 2.5rem);
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .project_layout {
+    padding: 4rem 2rem 0 2rem;
+  }
+  .project_layout .project_layout_inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project_layout .project_layout_inner::after, .project_layout .project_layout_inner::before {
+    display: none;
+  }
+  .project_layout .project_layout_inner img {
+    width: 70vw;
+    max-width: 32rem;
+    height: 70vw;
+    max-height: 32rem;
+  }
+  .project_layout .project_layout_inner:not(:has(img)) {
+    align-items: flex-start;
+  }
+  .project_layout .project_layout_inner .text_box {
+    gap: 3rem;
+  }
+  .project_layout .project_layout_inner .text_box p {
+    font-size: 2.8rem;
+  }
+  .project_layout .project_layout_inner .text_box dl {
+    gap: unset;
+    flex-direction: column;
+  }
+  .project_layout .project_layout_inner .text_box dl dt {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+  }
+  .project_layout .project_layout_inner .text_box dl dd {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+  }
+  .project_layout .project_layout_inner .text_box dl dd:last-of-type {
+    margin-bottom: 0;
+  }
+  .project_detail {
+    padding: 4rem 2rem;
+    padding-bottom: 0;
+  }
+  .project_detail img.onlyPC {
+    display: none;
+  }
+  .project_detail img.onlyMobile {
+    display: block;
+  }
+  .project_detail .flex_text {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .project_detail .flex_text p {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+}
+.popup {
+  position: fixed;
+  z-index: 700;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup.show {
+  display: flex;
+}
+.popup_inner {
+  position: relative;
+  display: flex;
+  width: 90%;
+  max-width: 128rem;
+  height: 90%;
+  border: 0.1rem solid #ededef;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: #fff;
+}
+.popup_closeBtn {
+  position: absolute;
+  z-index: 1;
+  top: 4rem;
+  right: 4rem;
+  width: 4.6rem;
+  height: 4.6rem;
+  transition: all 250ms ease;
+}
+.popup_closeBtn:before, .popup_closeBtn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3.2rem;
+  height: 0.3rem;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  background-color: #333;
+}
+.popup_closeBtn:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.popup_closeBtn:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.popup_closeBtn:hover {
+  transform: rotate(90deg);
+}
+.popup_closeBtn:hover:before, .popup_closeBtn:hover:after {
+  background-color: #aaa;
+}
+.popup_content {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 8rem;
+  box-sizing: border-box;
+  overflow-y: auto;
 }/*# sourceMappingURL=package.css.map */

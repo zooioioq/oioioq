@@ -53,7 +53,7 @@
         });
     }
 
-    // cursor
+        // cursor
     let mouseCursor = $('.cursor');
     $(window).mousemove(function(e){
         let cursorX = e.pageX + "px";
@@ -284,6 +284,39 @@
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].disabled = true;
         }
+    }
+
+    // popup
+    const $popup = $('.popup');
+    const $popupContent = $('.popup_content');
+
+    $('.design_btn').on('click', function() {
+        const targetUrl = $(this).data('url'); 
+        $popupContent.load(targetUrl, function(response, status, xhr) {
+            if (status === "error") {
+                console.error("파일 로드 실패:", xhr.status, xhr.statusText);
+                alert("콘텐츠를 불러오는 데 실패했습니다.");
+            } else {
+                $popup.addClass('show');
+                $('body').css('overflow', 'hidden');
+            }
+        });
+    });
+
+    $('.popup_closeBtn').on('click', function() {
+        closePopup();
+    });
+
+    $popup.on('click', function(e) {
+        if ($(e.target).is($popup)) {
+            closePopup();
+        }
+    });
+
+    function closePopup() {
+        $popup.removeClass('show');
+        $popupContent.empty();
+        $('body').css('overflow', 'auto');
     }
 
 })(jQuery);
