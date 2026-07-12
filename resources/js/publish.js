@@ -54,16 +54,8 @@
     }
 
     // cursor
-    let headerH1 = $('.header > h1');
-    let headerA = $('.header > a');
     let otherLi = $('#other .side_list li');
     let projectD = $('.project_layout > a');
-    $(headerH1).mouseover(function(){
-        let hasTop = $(this).parent('.header').hasClass('top');
-    });
-    $(headerA).mouseover(function(){
-        let hasTop = $(this).parent('.header').hasClass('top');
-    });
     $(otherLi).mouseover(function(){
         let _thisClass = $(this).attr('class');
         if(_thisClass == "jeju"){
