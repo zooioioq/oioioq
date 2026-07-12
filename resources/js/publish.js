@@ -53,84 +53,18 @@
         });
     }
 
-        // cursor
-    let mouseCursor = $('.cursor');
-    $(window).mousemove(function(e){
-        let cursorX = e.pageX + "px";
-        let cursorY = e.pageY + "px";
-        mouseCursor.css({"left": cursorX, "top": cursorY});
-    });
-    let sectionSpan = $('.section span');
+    // cursor
     let headerH1 = $('.header > h1');
     let headerA = $('.header > a');
-    let notionBtn = $('.notion_btn');
-    let sendBtn = $('.sendBtn');
     let otherLi = $('#other .side_list li');
-    let designLi = $('#design .design_list li');
-    let conInput = $('.input');
-    let projectA = $('#project > ul li a');
     let projectD = $('.project_layout > a');
     $(headerH1).mouseover(function(){
-        mouseCursor.addClass('cursor_grow');
-        mouseCursor.css({'z-index':1});
         let hasTop = $(this).parent('.header').hasClass('top');
-        if(hasTop == true){ mouseCursor.addClass('cursor_grow_l') }
-    });
-    $(headerH1).mouseleave(function(){
-        mouseCursor.removeClass('cursor_grow');
-        mouseCursor.removeClass('cursor_grow_l');
     });
     $(headerA).mouseover(function(){
-        mouseCursor.addClass('cursor_grow');
-        mouseCursor.css({'z-index':1});
         let hasTop = $(this).parent('.header').hasClass('top');
-        if(hasTop == true){ mouseCursor.addClass('cursor_grow_l') }
-    });
-    $(headerA).mouseleave(function(){
-        mouseCursor.removeClass('cursor_grow');
-        mouseCursor.removeClass('cursor_grow_l');
-    });
-    $(sectionSpan).mouseover(function(){
-        mouseCursor.addClass('cursor_grow');
-        mouseCursor.addClass('cursor_grow_p')
-    });
-    $(sectionSpan).mouseleave(function(){
-        mouseCursor.removeClass('cursor_grow');
-        mouseCursor.removeClass('cursor_grow_p')
-    });
-    $(notionBtn).mouseover(function(){
-        mouseCursor.addClass('cursor_grow');
-        mouseCursor.css({'z-index':-1});
-        notionBtn.css({'margin-left':'2rem', 'color':'#fff'});
-    });
-    $(notionBtn).mouseleave(function(){
-        mouseCursor.removeClass('cursor_grow');
-        mouseCursor.css({'z-index':1000});
-        notionBtn.css({'margin-left':'0rem', 'color':'#767676'});
-    });
-    $(sendBtn).mouseover(function(){
-        mouseCursor.addClass('cursor_grow');
-        mouseCursor.css({'z-index':0});
-        sendBtn.css({'right':'1rem', 'color':'#fff'});
-    });
-    $(sendBtn).mouseleave(function(){
-        mouseCursor.removeClass('cursor_grow');
-        mouseCursor.css({'z-index':1000});
-        sendBtn.css({'right':'4rem', 'color':'#333'});
-    });
-    $(conInput).mouseover(function(){
-        mouseCursor.addClass('cursor_grow');
-        mouseCursor.css({'z-index':1});
-        mouseCursor.addClass('cursor_grow_s');
-    });
-    $(conInput).mouseleave(function(){
-        mouseCursor.removeClass('cursor_grow');
-        mouseCursor.removeClass('cursor_grow_s');
     });
     $(otherLi).mouseover(function(){
-        mouseCursor.addClass('cursor_grow');
-        mouseCursor.css({'z-index':1});
-        mouseCursor.addClass('cursor_grow_s');
         let _thisClass = $(this).attr('class');
         if(_thisClass == "jeju"){
             $('.side_content').text('제주항공 :: React, CSS');
@@ -145,48 +79,7 @@
         }
     });
     $(otherLi).mouseleave(function(){
-        mouseCursor.removeClass('cursor_grow');
-        mouseCursor.removeClass('cursor_grow_s');
         $('.side_content').text('퍼블리싱 연습용으로 진행한 사이드 프로젝트입니다');
-    });
-    $(designLi).mouseover(function(){
-        mouseCursor.addClass('cursor_grow');
-        mouseCursor.css({'z-index':1});
-        mouseCursor.addClass('cursor_grow_s');
-    });
-    $(designLi).mouseleave(function(){
-        mouseCursor.removeClass('cursor_grow');
-        mouseCursor.removeClass('cursor_grow_s');
-    });
-    $(projectA).mouseover(function(){
-        let thisIndex = $(this).parent().index();
-        if(thisIndex == 1){
-            mouseCursor.addClass('cursor_grow_b');
-        }else if(thisIndex == 2) {
-            mouseCursor.addClass('cursor_grow_y');
-        }else if(thisIndex == 3) {
-            mouseCursor.addClass('cursor_grow_n');
-        }
-        mouseCursor.addClass('cursor_grow');
-        mouseCursor.addClass('cursor_grow_l');
-        mouseCursor.css({'z-index':-1});
-    });
-    $(projectA).mouseleave(function(){
-        mouseCursor.removeClass('cursor_grow');
-        mouseCursor.removeClass('cursor_grow_l');
-        mouseCursor.removeClass('cursor_grow_p');
-        mouseCursor.removeClass('cursor_grow_b');
-        mouseCursor.removeClass('cursor_grow_n');
-        mouseCursor.removeClass('cursor_grow_y');
-        mouseCursor.css({'z-index':1000});
-    });
-    $(projectD).mouseover(function(){
-        mouseCursor.addClass('cursor_grow');
-        mouseCursor.addClass('cursor_grow_s');
-    });
-    $(projectD).mouseleave(function(){
-        mouseCursor.removeClass('cursor_grow');
-        mouseCursor.removeClass('cursor_grow_s');
     });
 
     // project detail timer

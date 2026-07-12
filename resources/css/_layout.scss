@@ -4,58 +4,6 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  cursor: none;
-}
-
-
-// cursor
-.cursor {
-  position: absolute;
-  z-index: 1000;
-  width: 4vw;
-  height: 4vw;
-  padding: unset !important;
-  border: 2px solid var(--color-texta);
-  border-radius: 100%;
-  pointer-events: none;
-  transition-property: background,transform;
-  transform-origin: 100% 100%;
-  backdrop-filter: contrast(0.5);
-  background-size: cover;
-  transform: translate(-50%, -50%);
-  transition: all 100ms ease;
-
-  &_grow {
-    z-index: -1;
-    background-color: $primary--blue;
-    transform: scale(2);
-
-    &_s {
-      width: 1vw;
-      height: 1vw;
-      transform: unset;
-    }
-
-    &_l {
-      transform: scale(4);
-    }
-
-    &_p {
-      background-color: $primary--purple;
-    }
-    
-    &_y {
-      background-color: $project--yellow;
-    }
-    
-    &_n {
-      background-color: $project--navy;
-    }
-    
-    &_b {
-      background-color: $project--blue;
-    }
-  }
 }
 
 // 화면에서는 보이지 않지만, 스크린리더는 읽을 수 있는 요소 (웹접근성용)
