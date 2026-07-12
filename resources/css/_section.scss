@@ -292,11 +292,14 @@
     li {
       width: 50%;
       height: auto;
+      padding-bottom: 4rem;
+      border-bottom: 0.1rem solid $border-light;
+      margin-bottom: 4rem;
 
-      &:nth-child(-n+2) { 
-        padding-bottom: 4rem;
-        border-bottom: 0.1rem solid $border-light;
-        margin-bottom: 4rem;
+      &:nth-last-child(-n+2) { 
+        padding-bottom: unset;
+        border-bottom: unset;
+        margin-bottom: unset;
       }
 
       a {
@@ -1115,14 +1118,11 @@
 
       li {
         width: 100%;
-        padding-bottom: 4rem !important;
-        border-bottom: 0.1rem solid $border-light;
-        margin-bottom: 4rem !important;
 
-        &:last-child {
-          padding-bottom: 0 !important;
-          border-bottom: 0 !important;
-          margin-bottom: 0 !important;
+        &:nth-last-child(2) {
+          padding-bottom: 4rem !important;
+          border-bottom: 0.1rem solid $border-light;
+          margin-bottom: 4rem !important;
         }
 
         a {

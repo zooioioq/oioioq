@@ -573,11 +573,14 @@ textarea:focus {
 #project ul li {
   width: 50%;
   height: auto;
-}
-#project ul li:nth-child(-n+2) {
   padding-bottom: 4rem;
   border-bottom: 0.1rem solid #ededef;
   margin-bottom: 4rem;
+}
+#project ul li:nth-last-child(-n+2) {
+  padding-bottom: unset;
+  border-bottom: unset;
+  margin-bottom: unset;
 }
 #project ul li a {
   display: flex;
@@ -1201,14 +1204,11 @@ textarea:focus {
   }
   #project ul li {
     width: 100%;
+  }
+  #project ul li:nth-last-child(2) {
     padding-bottom: 4rem !important;
     border-bottom: 0.1rem solid #ededef;
     margin-bottom: 4rem !important;
-  }
-  #project ul li:last-child {
-    padding-bottom: 0 !important;
-    border-bottom: 0 !important;
-    margin-bottom: 0 !important;
   }
   #project ul li a {
     gap: 2rem;
