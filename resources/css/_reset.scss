@@ -131,8 +131,7 @@ textarea:focus {
   outline: 0; 
 }
 
-/* selection */
 ::selection {
-  color: var(--main-blue); 
-  background-color: transparent;
+  background-color: #8eafce;
+  color: #fff; 
 }
