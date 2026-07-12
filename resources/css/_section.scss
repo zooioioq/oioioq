@@ -643,6 +643,7 @@
           font-family: 'EB Garamond Variable';
           font-size: 3.2rem;
           font-weight: 800;
+          text-align: left;
           color: $text--black;
           text-transform: capitalize;
         }
@@ -975,7 +976,7 @@
 }
 
 // 640.1 ~ 1024
-@media screen and ( min-width : 640.1px ) and ( max-width : 1024px ){
+@media screen and ( min-width : 640.1px ) and ( max-width : 1024px ) {
   // project
   #project {
     padding: 17rem 3rem 9rem;
@@ -1245,10 +1246,6 @@
       .flex_l,
       .flex_r {
         width: 100%;
-      }
-
-      .sendBtn {
-        right: 4rem;
       }
     }
   }

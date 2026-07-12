@@ -850,6 +850,7 @@ textarea:focus {
   font-family: "EB Garamond Variable";
   font-size: 3.2rem;
   font-weight: 800;
+  text-align: left;
   color: #333;
   text-transform: capitalize;
 }
@@ -1291,9 +1292,6 @@ textarea:focus {
   #contact form .flex_r {
     width: 100%;
   }
-  #contact form .sendBtn {
-    right: 4rem;
-  }
 }
 .project_layout {
   position: relative;
@@ -1572,4 +1570,36 @@ textarea:focus {
   padding-bottom: 8rem;
   box-sizing: border-box;
   overflow-y: auto;
+}
+
+@media screen and (min-width: 640.1px) and (max-width: 1024px) {
+  .popup_inner {
+    width: 100%;
+    max-width: unset;
+    height: 100%;
+  }
+  .popup_closeBtn {
+    top: 3rem;
+    right: 3rem;
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  .popup_content {
+    padding-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .popup_inner {
+    width: 100%;
+    max-width: unset;
+    height: 100%;
+  }
+  .popup_closeBtn {
+    right: 2rem;
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  .popup_content {
+    padding-bottom: 4rem;
+  }
 }/*# sourceMappingURL=package.css.map */
