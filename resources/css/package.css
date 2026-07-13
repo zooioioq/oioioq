@@ -1193,6 +1193,12 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 640px) {
+  .section p span:first-child {
+    font-size: 4.8vw;
+  }
+  .section p span:last-child {
+    font-size: 11vw;
+  }
   #project {
     padding: 14rem 2rem 8rem;
   }
@@ -1601,5 +1607,8 @@ textarea:focus {
   }
   .popup_content {
     padding-bottom: 4rem;
+  }
+  .popup_content .project_layout .project_layout_inner .text_box p {
+    padding-right: 4rem;
   }
 }/*# sourceMappingURL=package.css.map */

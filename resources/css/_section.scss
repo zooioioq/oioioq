@@ -1105,6 +1105,20 @@
 
 // ~ 640
 @media screen and ( max-width : 640px ) {
+  .section {
+    p {
+      span {
+        &:first-child {
+          font-size: 4.8vw;
+        }
+
+        &:last-child {
+          font-size: 11vw;
+        }
+      }
+    }
+  }
+
   // project
   #project {
     padding: 14rem 2rem 8rem;
