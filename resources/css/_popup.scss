@@ -113,6 +113,16 @@
 
     &_content {
       padding-bottom: 4rem;
+
+      .project_layout {
+        .project_layout_inner {
+          .text_box {
+            p {
+              padding-right: 4rem;
+            }
+          }
+        }
+      }
     }
   }
 }
