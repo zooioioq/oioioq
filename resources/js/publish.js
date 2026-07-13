@@ -89,6 +89,12 @@
         });
     }
 
+    // project coming soon
+    $('.coming_soon').on('click', function(event) {
+        event.preventDefault();
+        alert('컨텐츠를 준비중입니다.');
+    });
+
     // contact
     function getFormData(form) {
     var elements = form.elements;
