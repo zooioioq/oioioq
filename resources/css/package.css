@@ -1471,6 +1471,7 @@ textarea:focus {
     align-items: flex-start;
   }
   .project_layout .project_layout_inner .text_box {
+    width: 100%;
     gap: 3rem;
   }
   .project_layout .project_layout_inner .text_box p {
