@@ -105,6 +105,18 @@
       gap: 0 !important;
     }
 
+    &_flexWrap {
+      display: flex;
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      gap: 4rem;
+
+      & > * {
+        width: calc(50% - 2rem);
+      }
+    }
+
     &_img {
       width: 100%;
       border: 0.1rem solid $border-light;
@@ -123,7 +135,7 @@
     &_items {
       display: flex;
       flex-direction: column;
-      gap: 0.8rem;
+      gap: 1.2rem;
 
       .project_detail {
         &_title {
@@ -239,12 +251,11 @@
     padding: 6rem 3rem;
     padding-bottom: 0;
 
-    .flex_text {
-      gap: 5rem;
+    &_flexWrap {
+      flex-direction: column;
 
-      p {
-        width: calc(50% - 2.5rem);
-        font-size: 1.6rem;
+      & > * {
+        width: 100%;
       }
     }
   }
@@ -321,13 +332,12 @@
       }
     }
 
-    .flex_text {
+    &_flexWrap {
       flex-direction: column;
-      gap: 4rem;
+      gap: 2rem;
 
-      p {
+      & > * {
         width: 100%;
-        font-size: 1.6rem;
       }
     }
   }
