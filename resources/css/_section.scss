@@ -494,6 +494,42 @@
       background-color: $project--navy;
     }
   }
+
+  &.spp {
+    .project_layout {
+      .project_layout_inner {
+        &::after {
+          background-color: $project--spp;
+        }
+
+        &:hover::before {
+          color: $project--spp;
+        }
+      }
+    }
+
+    .project_link {
+      background-color: $project--spp;
+    }
+  }
+
+  &.psc {
+    .project_layout {
+      .project_layout_inner {
+        &::after {
+          background-color: $project--psc;
+        }
+
+        &:hover::before {
+          color: $project--psc;
+        }
+      }
+    }
+
+    .project_link {
+      background-color: $project--psc;
+    }
+  }
 }
 
 

@@ -715,6 +715,24 @@ textarea:focus {
 .prjctdtl.ch .project_link {
   background-color: #385CA9;
 }
+.prjctdtl.spp .project_layout .project_layout_inner::after {
+  background-color: #0066FF;
+}
+.prjctdtl.spp .project_layout .project_layout_inner:hover::before {
+  color: #0066FF;
+}
+.prjctdtl.spp .project_link {
+  background-color: #0066FF;
+}
+.prjctdtl.psc .project_layout .project_layout_inner::after {
+  background-color: #3F4A7D;
+}
+.prjctdtl.psc .project_layout .project_layout_inner:hover::before {
+  color: #3F4A7D;
+}
+.prjctdtl.psc .project_link {
+  background-color: #3F4A7D;
+}
 
 #other {
   position: relative;
