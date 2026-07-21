@@ -1392,18 +1392,76 @@ textarea:focus {
 .project_detail.noGap {
   gap: 0 !important;
 }
-.project_detail img {
+.project_detail_img {
   width: 100%;
   border: 0.1rem solid #ededef;
   box-sizing: border-box;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.project_detail img.onlyPC {
+.project_detail_img.onlyPC {
   display: block;
 }
-.project_detail img.onlyMobile {
+.project_detail_img.onlyMobile {
   display: none;
+}
+.project_detail_items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.project_detail_items .project_detail_title {
+  display: flex;
+  font-family: "EB Garamond Variable";
+  font-size: 2.4rem;
+  font-weight: 800;
+  align-items: center;
+  gap: 0.8rem;
+}
+.project_detail_items .project_detail_title i {
+  font-size: 1.8rem;
+  font-style: normal;
+}
+.project_detail_items .project_detail_list {
+  display: flex;
+  padding-left: 1.2rem;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.project_detail_items .project_detail_list dt {
+  margin-top: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.project_detail_items .project_detail_list dd {
+  padding-left: 2.2rem;
+  line-height: 150%;
+}
+.project_detail_items .project_detail_list dd p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.project_detail_items .project_detail_list dd span {
+  position: relative;
+  display: block;
+  margin-top: 0.2rem;
+  padding-left: 1.2rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+.project_detail_items .project_detail_list dd span::before {
+  content: "·";
+  position: absolute;
+  top: 0;
+  left: 4px;
+  display: inline-block;
+}
+.project_detail_items span {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 150%;
 }
 .project_detail .flex_text {
   display: flex;
@@ -1413,9 +1471,9 @@ textarea:focus {
 }
 .project_detail .flex_text p {
   width: calc(50% - 4rem);
-  line-height: 150%;
   font-size: 1.8rem;
   font-weight: 300;
+  line-height: 150%;
 }
 
 @media screen and (min-width: 640.1px) and (max-width: 1024px) {
