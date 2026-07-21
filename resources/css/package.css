@@ -1556,10 +1556,10 @@ textarea:focus {
     padding: 4rem 2rem;
     padding-bottom: 0;
   }
-  .project_detail img.onlyPC {
+  .project_detail_img.onlyPC {
     display: none;
   }
-  .project_detail img.onlyMobile {
+  .project_detail_img.onlyMobile {
     display: block;
   }
   .project_detail .flex_text {
