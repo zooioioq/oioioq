@@ -1229,6 +1229,7 @@ textarea:focus {
   }
   #project ul li {
     width: 100%;
+    scroll-margin-top: 10rem;
   }
   #project ul li:nth-last-child(2) {
     padding-bottom: 4rem !important;
