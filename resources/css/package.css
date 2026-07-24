@@ -576,6 +576,7 @@ textarea:focus {
   padding-bottom: 4rem;
   border-bottom: 0.1rem solid #ededef;
   margin-bottom: 4rem;
+  scroll-margin-top: 11.2rem;
 }
 #project ul li:nth-last-child(-n+2) {
   padding-bottom: unset;
