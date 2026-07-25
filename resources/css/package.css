@@ -1498,7 +1498,7 @@ textarea:focus {
   display: flex;
   width: 100%;
   height: auto;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
   border: 1px solid #ededef;
   border-radius: 1.2rem;
   box-sizing: border-box;
