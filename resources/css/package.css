@@ -1419,7 +1419,7 @@ textarea:focus {
   box-sizing: border-box;
   gap: 4rem;
 }
-.project_detail_flexWrap > * {
+.project_detail_flexWrap > .project_detail_items {
   width: calc(50% - 2rem);
 }
 .project_detail_img {
@@ -1437,6 +1437,7 @@ textarea:focus {
 }
 .project_detail_items {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 1.2rem;
 }
@@ -1595,7 +1596,7 @@ textarea:focus {
     flex-direction: column;
     gap: 2rem;
   }
-  .project_detail_flexWrap > * {
+  .project_detail_flexWrap > .project_detail_items {
     width: 100%;
   }
 }
