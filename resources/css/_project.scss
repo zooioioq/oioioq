@@ -203,6 +203,27 @@
       }
     }
 
+    &_notice {
+      display: flex;
+      width: 100%;
+      height: auto;
+      padding: 2rem 4rem;
+      border : 1px solid $border-light;
+      border-radius: 1.2rem;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      background-color: $bg--white;
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 150%;
+        text-align: center;
+        color: $text--mid;
+      }
+    }
+
     .flex_text {
       display: flex;
       padding: 0 1rem;

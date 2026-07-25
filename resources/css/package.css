@@ -1494,6 +1494,25 @@ textarea:focus {
   font-weight: 200;
   line-height: 150%;
 }
+.project_detail_notice {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 2rem 4rem;
+  border: 1px solid #ededef;
+  border-radius: 1.2rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F7FA;
+}
+.project_detail_notice p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 150%;
+  text-align: center;
+  color: #767676;
+}
 .project_detail .flex_text {
   display: flex;
   padding: 0 1rem;
